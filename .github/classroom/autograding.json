@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "fir1: check design constraints, check that simulations, synthesis, and cosimulation have been run",
+      "setup": "",
+      "run": "python ./.github/grade/grade_fir1.py",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 33
+    },
+    {
+      "name": "fir2: check design constraints, check that simulations, synthesis, and cosimulation have been run",
+      "setup": "",
+      "run": "python ./.github/grade/grade_fir2.py",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 33
+    },
+    {
+      "name": "fir3: check design constraints, check that simulations, synthesis, and cosimulation have been run",
+      "setup": "",
+      "run": "python ./.github/grade/grade_fir3.py",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 34
+    }
+  ]
+}
