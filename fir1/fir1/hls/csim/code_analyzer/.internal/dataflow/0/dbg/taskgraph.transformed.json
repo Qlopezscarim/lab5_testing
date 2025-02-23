@@ -1,0 +1,750 @@
+[
+    {
+        "name": "_Z3topPfS_i",
+        "df_function": "%F691",
+        "df_type": "Function",
+        "project": "SLX",
+        "processes": {
+            "1": {
+                "id": "1",
+                "name": "Artificial<Start>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                        "line": 62,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                        "line": 78,
+                        "column": 1
+                    }
+                },
+                "display_name": "<START>",
+                "kind": "start"
+            },
+            "2": {
+                "id": "2",
+                "name": "Artificial<End>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                        "line": 62,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                        "line": 78,
+                        "column": 1
+                    }
+                },
+                "display_name": "<END>",
+                "kind": "end"
+            },
+            "3": {
+                "id": "3",
+                "name": "Region<OutlineCall(R2 top) BB 'codeRepl' [Call] 'Outline_T3_F691_R2_Call'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                        "line": 71,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                        "line": 71,
+                        "column": 25
+                    }
+                },
+                "display_name": "read_task()",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                    "line": 68,
+                                    "column": 11
+                                },
+                                "id": "VId_1559_[?(?,32)]",
+                                "name": "input[*]",
+                                "display_name": "din_t input[1000]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i17",
+                                    "access_bit_width": 17,
+                                    "exec_count": 1000
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                    "line": 62,
+                                    "column": 0
+                                },
+                                "id": "VId_1556_*0(0,32)arg+?(?,32)",
+                                "name": "(*in)",
+                                "display_name": "float *in"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                        "line": 47,
+                                        "column": 20
+                                    },
+                                    "access_type": "float",
+                                    "access_bit_width": 32,
+                                    "exec_count": 1000
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 0
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                    "line": 62,
+                                    "column": 0
+                                },
+                                "id": "VId_1558_!c?(?,?)",
+                                "name": "N",
+                                "display_name": "int N"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 2
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F695_R2",
+                        "description": "<call 'read_task'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                "line": 71,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                "line": 71,
+                                "column": 25
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%F692",
+                        "region_type": "Function",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                "line": 71,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                "line": 71,
+                                "column": 25
+                            }
+                        }
+                    }
+                ]
+            },
+            "4": {
+                "id": "4",
+                "name": "Region<OutlineCall(R3 top) BB 'codeRepl1' [Call] 'Outline_T4_F691_R3_Call'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                        "line": 76,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                        "line": 76,
+                        "column": 23
+                    }
+                },
+                "display_name": "fir()",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                    "line": 68,
+                                    "column": 11
+                                },
+                                "id": "VId_1559_[?(?,32)]",
+                                "name": "input[*]",
+                                "display_name": "din_t input[1000]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i17",
+                                    "access_bit_width": 17,
+                                    "exec_count": 1000
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                    "line": 69,
+                                    "column": 12
+                                },
+                                "id": "VId_1560_[?(?,32)]",
+                                "name": "output[*]",
+                                "display_name": "dout_t output[1000]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i19",
+                                    "access_bit_width": 19,
+                                    "exec_count": 1000
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                    "line": 62,
+                                    "column": 0
+                                },
+                                "id": "VId_1558_!c?(?,?)",
+                                "name": "N",
+                                "display_name": "int N"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 2
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                    "line": 5,
+                                    "column": 0
+                                },
+                                "id": "VId_9_[?(?,32)].A0(0,32).A0(0,32).A0(0,32)",
+                                "name": "a[*].V.VAL",
+                                "display_name": "ValType ssdm_int_sim<17, true>::ap_private<17, true, true>::VAL"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 40,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                        "line": 29,
+                                        "column": 16
+                                    },
+                                    "access_type": "i17",
+                                    "access_bit_width": 17,
+                                    "exec_count": 10000
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F696_R2",
+                        "description": "<call 'fir'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                "line": 76,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                "line": 76,
+                                "column": 23
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%F693",
+                        "region_type": "Function",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                "line": 76,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                "line": 76,
+                                "column": 23
+                            }
+                        }
+                    }
+                ]
+            },
+            "5": {
+                "id": "5",
+                "name": "Region<OutlineCall(R4 top) BB 'codeRepl2' [Call] 'Outline_T5_F691_R4_Call'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                        "line": 77,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                        "line": 77,
+                        "column": 28
+                    }
+                },
+                "display_name": "write_task()",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                    "line": 69,
+                                    "column": 12
+                                },
+                                "id": "VId_1560_[?(?,32)]",
+                                "name": "output[*]",
+                                "display_name": "dout_t output[1000]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                        "line": 58,
+                                        "column": 18
+                                    },
+                                    "access_type": "i19",
+                                    "access_bit_width": 19,
+                                    "exec_count": 1000
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                        "line": 58,
+                                        "column": 18
+                                    },
+                                    "access_type": "i19",
+                                    "access_bit_width": 19,
+                                    "exec_count": 1000
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                        "line": 58,
+                                        "column": 18
+                                    },
+                                    "access_type": "i19",
+                                    "access_bit_width": 19,
+                                    "exec_count": 1000
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                        "line": 58,
+                                        "column": 18
+                                    },
+                                    "access_type": "i19",
+                                    "access_bit_width": 19,
+                                    "exec_count": 1000
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                    "line": 62,
+                                    "column": 0
+                                },
+                                "id": "VId_1557_*0(0,32)arg+?(?,32)",
+                                "name": "(*out)",
+                                "display_name": "float *out"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                        "line": 58,
+                                        "column": 16
+                                    },
+                                    "access_type": "float",
+                                    "access_bit_width": 32,
+                                    "exec_count": 1000
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 1
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                    "line": 62,
+                                    "column": 0
+                                },
+                                "id": "VId_1558_!c?(?,?)",
+                                "name": "N",
+                                "display_name": "int N"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 2
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F697_R2",
+                        "description": "<call 'write_task'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                "line": 77,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                "line": 77,
+                                "column": 28
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%F694",
+                        "region_type": "Function",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                "line": 77,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                                "line": 77,
+                                "column": 28
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "channels": {
+            "(*in)_RAW_1_3_#0": {
+                "name": "(*in)_RAW_1_3_#0",
+                "variable_id": "VId_1556_*0(0,32)arg+?(?,32)",
+                "variable_name": "(*in)",
+                "declaration": "float *in",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "N_RAW_1_3_#1": {
+                "name": "N_RAW_1_3_#1",
+                "variable_id": "VId_1558_!c?(?,?)",
+                "variable_name": "N",
+                "declaration": "int N",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "input[*]_RAW_3_4_#2": {
+                "name": "input[*]_RAW_3_4_#2",
+                "variable_id": "VId_1559_[?(?,32)]",
+                "variable_name": "input[*]",
+                "declaration": "din_t input[1000]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                    "line": 68,
+                    "column": 11
+                },
+                "source": "3",
+                "sink": "4"
+            },
+            "a[*].V.VAL_RAW_1_4_#3": {
+                "name": "a[*].V.VAL_RAW_1_4_#3",
+                "variable_id": "VId_9_[?(?,32)].A0(0,32).A0(0,32).A0(0,32)",
+                "variable_name": "a[*].V.VAL",
+                "declaration": "ValType ssdm_int_sim<17, true>::ap_private<17, true, true>::VAL",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                    "line": 5,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "4"
+            },
+            "N_RAR_3_4_#4": {
+                "name": "N_RAR_3_4_#4",
+                "variable_id": "VId_1558_!c?(?,?)",
+                "variable_name": "N",
+                "declaration": "int N",
+                "kind": "SSA",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "3",
+                "sink": "4"
+            },
+            "output[*]_RAW_4_5_#5": {
+                "name": "output[*]_RAW_4_5_#5",
+                "variable_id": "VId_1560_[?(?,32)]",
+                "variable_name": "output[*]",
+                "declaration": "dout_t output[1000]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                    "line": 69,
+                    "column": 12
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "N_RAR_4_5_#6": {
+                "name": "N_RAR_4_5_#6",
+                "variable_id": "VId_1558_!c?(?,?)",
+                "variable_name": "N",
+                "declaration": "int N",
+                "kind": "SSA",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "(*out)_RAW_5_2_#7": {
+                "name": "(*out)_RAW_5_2_#7",
+                "variable_id": "VId_1557_*0(0,32)arg+?(?,32)",
+                "variable_name": "(*out)",
+                "declaration": "float *out",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "5",
+                "sink": "2"
+            }
+        },
+        "control": [
+            {
+                "source": "3",
+                "sink": "4"
+            },
+            {
+                "source": "4",
+                "sink": "5"
+            },
+            {
+                "source": "1",
+                "sink": "3"
+            },
+            {
+                "source": "5",
+                "sink": "2"
+            }
+        ]
+    }
+]

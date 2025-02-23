@@ -1,0 +1,234 @@
+{
+    "rules": {
+        "['/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/fir.cpp.0.bc', '/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/fir.cpp.0.bc.d']": {
+            "command": [
+                "/ecel/apps/xilinx24/Vitis/2024.2/vcxx/libexec/clang",
+                "-c",
+                "-emit-llvm",
+                "-MD",
+                "-MF",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/fir.cpp.0.bc.d",
+                "-fhls",
+                "-hls-syn-headers-dir=/ecel/apps/xilinx24/Vitis/2024.2/vcxx/data/autopilot",
+                "-vitis-hls=/apps/xilinx24/Vitis/2024.2",
+                "--gcc-toolchain=/ecel/apps/xilinx24/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+                "-hls-clock-period=5.0",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fhlstoplevel=top",
+                "fir.cpp",
+                "-o",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/fir.cpp.0.bc"
+            ],
+            "exectime": 1.4993324279785156,
+            "cwd": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1"
+        },
+        "['/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/fir_test.cpp.0.o', '/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/fir_test.cpp.0.o.d']": {
+            "command": [
+                "/ecel/apps/xilinx24/Vitis/2024.2/vcxx/libexec/clang",
+                "-c",
+                "-MD",
+                "-MF",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/fir_test.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=/ecel/apps/xilinx24/Vitis/2024.2/vcxx/data/include",
+                "-vitis-hls=/apps/xilinx24/Vitis/2024.2",
+                "--gcc-toolchain=/ecel/apps/xilinx24/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fslxskipfunctionbody",
+                "-fhlstoplevel=top",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir_test.cpp",
+                "-o",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/fir_test.cpp.0.o"
+            ],
+            "exectime": 1.9554905891418457,
+            "cwd": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1"
+        },
+        "['/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/fir.cpp.0.o', '/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/fir.cpp.0.o.d']": {
+            "command": [
+                "/ecel/apps/xilinx24/Vitis/2024.2/vcxx/libexec/clang",
+                "-c",
+                "-MD",
+                "-MF",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/fir.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=/ecel/apps/xilinx24/Vitis/2024.2/vcxx/data/include",
+                "-vitis-hls=/apps/xilinx24/Vitis/2024.2",
+                "--gcc-toolchain=/ecel/apps/xilinx24/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-fslxskipfunctionbody",
+                "-fhlstoplevel=top",
+                "fir.cpp",
+                "-o",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/fir.cpp.0.o"
+            ],
+            "exectime": 2.3949434757232666,
+            "cwd": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1"
+        },
+        "['/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/syn_srcs.bc']": {
+            "command": [
+                "/ecel/apps/xilinx24/Vitis/2024.2/vcxx/libexec/llvm-link",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/fir.cpp.0.bc",
+                "-o",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/syn_srcs.bc"
+            ],
+            "exectime": 0.0722048282623291,
+            "cwd": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1"
+        },
+        "['/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc']": {
+            "command": [
+                "/ecel/apps/xilinx24/Vitis/2024.2/vcxx/libexec/opt",
+                "-check-single-toplevel",
+                "-make-non-toplevel-internal",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/syn_srcs.bc",
+                "-o",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc"
+            ],
+            "exectime": 0.11305952072143555,
+            "cwd": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1"
+        },
+        "['/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/app.exe']": {
+            "command": [
+                "/ecel/apps/xilinx24/Vitis/2024.2/vcxx/libexec/clang++",
+                "-o",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/app.exe",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/fir_test.cpp.0.o",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/fir.cpp.0.o",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc",
+                "-fhls",
+                "-fhlstoplevel=top",
+                "-Wl,--as-needed",
+                "-L/apps/xilinx24/Vitis/2024.2/lnx64/tools/dds_v6_0",
+                "-lIp_dds_compiler_v6_0_bitacc_cmodel",
+                "-Wl,--disable-new-dtags",
+                "-Wl,-rpath=/apps/xilinx24/Vitis/2024.2/lnx64/tools/dds_v6_0",
+                "-L/apps/xilinx24/Vitis/2024.2/lnx64/tools/fft_v9_1",
+                "-lIp_xfft_v9_1_bitacc_cmodel",
+                "-Wl,-rpath=/apps/xilinx24/Vitis/2024.2/lnx64/tools/fft_v9_1",
+                "-L/apps/xilinx24/Vitis/2024.2/lnx64/tools/fir_v7_0",
+                "-lIp_fir_compiler_v7_2_bitacc_cmodel",
+                "-Wl,-rpath=/apps/xilinx24/Vitis/2024.2/lnx64/tools/fir_v7_0",
+                "-L/apps/xilinx24/Vitis/2024.2/lnx64/tools/fpo_v7_1",
+                "-lIp_floating_point_v7_1_bitacc_cmodel",
+                "-Wl,-rpath=/apps/xilinx24/Vitis/2024.2/lnx64/tools/fpo_v7_1",
+                "-lm",
+                "-L/apps/xilinx24/Vitis/2024.2/lnx64/lib/csim",
+                "-lhlsm-GCC46",
+                "-Wl,-rpath=/apps/xilinx24/Vitis/2024.2/lnx64/lib/csim",
+                "-lhlsmc++-GCC46",
+                "-lgmp",
+                "-lmpfr",
+                "-Wl,--no-as-needed",
+                "--gcc-toolchain=/ecel/apps/xilinx24/Vitis/2024.2/tps/lnx64/gcc-8.3.0",
+                "-Wl,--disable-new-dtags",
+                "-Wl,-rpath=/ecel/apps/xilinx24/Vitis/2024.2/tps/lnx64/gcc-8.3.0/lib64",
+                "-fslxtrace",
+                "-fslx-compile-mode",
+                "-Wl,-mllvm,-profilerOutputDirectory=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/profiler/0",
+                "-fslxpthreads"
+            ],
+            "exectime": 2.0135984420776367,
+            "cwd": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1"
+        },
+        "['/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/instrument/app_0/hls_ir_info.json']": {
+            "command": [
+                "/ecel/apps/xilinx24/Vitis/2024.2/vcxx/libexec/irInfoDump",
+                "--ir-module",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/instrument/app_0/project.symbols.bc",
+                "--json-output",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/instrument/app_0/hls_ir_info.json",
+                "--hw-function",
+                "top"
+            ],
+            "exectime": 0.31881284713745117,
+            "cwd": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1"
+        },
+        "['/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/instrument/app_0/binary_dependencies.json']": {
+            "command": [
+                "/ecel/apps/xilinx24/Vitis/2024.2/vcxx/libexec/clang-scan-deps",
+                "--compilation-database=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/instrument/app_0/compile_commands.json",
+                "--format=vitiscxx",
+                "--reuse-filemanager=false",
+                "--output=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/instrument/app_0/binary_dependencies.json"
+            ],
+            "exectime": 0.2019329071044922,
+            "cwd": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1"
+        },
+        "['/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/bin/.tracing_stdout.txt', '/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/bin/.tracing_stderr.txt']": {
+            "command": [
+                "/ecel/apps/xilinx24/Vitis/2024.2/vcxx/libexec/rwd",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/build/app.exe"
+            ],
+            "exectime": 0.0534815788269043,
+            "cwd": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/tracing/csim/build"
+        },
+        "['/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/instrument/app_0/annotated.bc']": {
+            "command": [
+                "/ecel/apps/xilinx24/Vitis/2024.2/vcxx/libexec/optimizer",
+                "-DFGPass",
+                "-outputDir",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/output",
+                "-logDir",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/log",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/instrument/app_0/project.symbols.bc",
+                "-staticFile",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/instrument/app_0/static.xml",
+                "-traceFile",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/profiler/0/app_0_0/thread0000-trace.txt",
+                "-o",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/instrument/app_0/annotated.bc"
+            ],
+            "exectime": 0.4914066791534424,
+            "cwd": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1"
+        },
+        "['/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/dataflow/0/taskgraph.json']": {
+            "command": [
+                "/ecel/apps/xilinx24/Vitis/2024.2/vcxx/libexec/parallelismSelector",
+                "--basepath",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1",
+                "--fpga-part",
+                "xczu48dr-ffvg1517-2-e",
+                "--device-totals",
+                "/ecel/apps/xilinx24/Vitis/2024.2/vcxx/data/platform/logic/fpga.devicetotals",
+                "--clock-frequency",
+                "200.0",
+                "--out-dir",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/output",
+                "--log-dir",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/log",
+                "--objective",
+                "none",
+                "--performance-target",
+                "target_both",
+                "--max-array-optimization-factor",
+                "1024",
+                "--complete-partition-limit",
+                "4",
+                "--lut-constraint",
+                "100.0",
+                "--ff-constraint",
+                "100.0",
+                "--dsp-constraint",
+                "100.0",
+                "--bram-constraint",
+                "100.0",
+                "--uram-constraint",
+                "100.0",
+                "--max-iterations",
+                "1000",
+                "--max-iterations-branch-full-log",
+                "20",
+                "--ir-module",
+                "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/instrument/app_0/annotated.bc",
+                "--df-id",
+                "0",
+                "--df-target",
+                "%F691"
+            ],
+            "exectime": 1.3016698360443115,
+            "cwd": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1"
+        }
+    }
+}

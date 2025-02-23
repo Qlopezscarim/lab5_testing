@@ -1,0 +1,249 @@
+Test 0 checked:
+Max ABS error in y[n] = 9.50694e-05 <= error tolerence of 0.0001
+Test 1 checked:
+Max ABS error in y[n] = 7.32541e-05 <= error tolerence of 0.0001
+Test 2 checked:
+Max ABS error in y[n] = 8.98838e-05 <= error tolerence of 0.0001
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /apps/xilinx24/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_top_top glbl -Oenable_linking_all_libraries -prj top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib ieee_proposed=./ieee_proposed -s top 
+Multi-threading is on. Using 10 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/ip/xil_defaultlib/top_fpext_32ns_64_2_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_fpext_32ns_64_2_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_fpext_32ns_64_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_fpext_32ns_64_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_write_task.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_write_task
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_input_r_RAM_AUTO_1R1W_memcore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_input_r_RAM_AUTO_1R1W_memcore
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_mul_17s_13s_30_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_mul_17s_13s_30_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_flow_control_loop_delay_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_flow_control_loop_delay_pipe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_read_task.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_read_task
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_gmem_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_gmem_m_axi
+INFO: [VRFC 10-311] analyzing module top_gmem_m_axi_load
+INFO: [VRFC 10-311] analyzing module top_gmem_m_axi_store
+INFO: [VRFC 10-311] analyzing module top_gmem_m_axi_read
+INFO: [VRFC 10-311] analyzing module top_gmem_m_axi_write
+INFO: [VRFC 10-311] analyzing module top_gmem_m_axi_burst_converter
+INFO: [VRFC 10-311] analyzing module top_gmem_m_axi_throttle
+INFO: [VRFC 10-311] analyzing module top_gmem_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module top_gmem_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module top_gmem_m_axi_srl
+INFO: [VRFC 10-311] analyzing module top_gmem_m_axi_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_mul_17s_14s_31_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_mul_17s_14s_31_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_mul_17s_12ns_29_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_mul_17s_12ns_29_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_output_r_RAM_AUTO_1R1W_memcore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_output_r_RAM_AUTO_1R1W_memcore
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_mul_17s_14ns_31_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_mul_17s_14ns_31_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/AESL_axi_master_gmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_mul_17s_15ns_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_mul_17s_15ns_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_mul_17s_13ns_30_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_mul_17s_13ns_30_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_fifo_w64_d4_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_fifo_w64_d4_S
+INFO: [VRFC 10-311] analyzing module top_fifo_w64_d4_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_fifo_w32_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_fifo_w32_d2_S
+INFO: [VRFC 10-311] analyzing module top_fifo_w32_d2_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_write_task_Pipeline_VITIS_LOOP_54_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_write_task_Pipeline_VITIS_LOOP_54_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_top_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_mul_17s_15s_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_mul_17s_15s_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_sparsemux_9_3_17_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_sparsemux_9_3_17_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_fir.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_fir
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_input_r_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_input_r_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_entry_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_entry_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_ctlz_19_19_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_ctlz_19_19_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top_output_r_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_output_r_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package floating_point_v7_1_19.floating_point_v7_1_19_viv_comp
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_14.xbip_utils_v3_0_14_pkg
+Compiling package axi_utils_v2_0_10.axi_utils_v2_0_10_pkg
+Compiling package floating_point_v7_1_19.floating_point_v7_1_19_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_19.floating_point_v7_1_19_exp_table...
+Compiling package mult_gen_v12_0_22.mult_gen_v12_0_22_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_19.floating_point_v7_1_19_pkg
+Compiling package floating_point_v7_1_19.flt_utils
+Compiling package unisim.vcomponents
+Compiling package xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv_comp
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.top_input_r_RAM_AUTO_1R1W_memcor...
+Compiling module xil_defaultlib.top_input_r_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.top_output_r_RAM_AUTO_1R1W_memco...
+Compiling module xil_defaultlib.top_output_r_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.top_control_s_axi
+Compiling module xil_defaultlib.top_gmem_m_axi_srl(DATA_WIDTH=96...
+Compiling module xil_defaultlib.top_gmem_m_axi_fifo(DATA_WIDTH=9...
+Compiling module xil_defaultlib.top_gmem_m_axi_mem(MEM_STYLE="bl...
+Compiling module xil_defaultlib.top_gmem_m_axi_fifo(MEM_STYLE="b...
+Compiling module xil_defaultlib.top_gmem_m_axi_srl(DATA_WIDTH=1,...
+Compiling module xil_defaultlib.top_gmem_m_axi_fifo(DATA_WIDTH=1...
+Compiling module xil_defaultlib.top_gmem_m_axi_srl(DATA_WIDTH=1,...
+Compiling module xil_defaultlib.top_gmem_m_axi_fifo(DATA_WIDTH=1...
+Compiling module xil_defaultlib.top_gmem_m_axi_store(NUM_WRITE_O...
+Compiling module xil_defaultlib.top_gmem_m_axi_mem(MEM_STYLE="bl...
+Compiling module xil_defaultlib.top_gmem_m_axi_fifo(MEM_STYLE="b...
+Compiling module xil_defaultlib.top_gmem_m_axi_load(NUM_READ_OUT...
+Compiling module xil_defaultlib.top_gmem_m_axi_reg_slice(DATA_WI...
+Compiling module xil_defaultlib.top_gmem_m_axi_burst_converter(D...
+Compiling module xil_defaultlib.top_gmem_m_axi_srl(DATA_WIDTH=8,...
+Compiling module xil_defaultlib.top_gmem_m_axi_fifo(DATA_WIDTH=8...
+Compiling module xil_defaultlib.top_gmem_m_axi_reg_slice(DATA_WI...
+Compiling module xil_defaultlib.top_gmem_m_axi_srl(DATA_WIDTH=72...
+Compiling module xil_defaultlib.top_gmem_m_axi_fifo(DATA_WIDTH=7...
+Compiling module xil_defaultlib.top_gmem_m_axi_srl(DATA_WIDTH=28...
+Compiling module xil_defaultlib.top_gmem_m_axi_fifo(DATA_WIDTH=2...
+Compiling module xil_defaultlib.top_gmem_m_axi_throttle(CONSERVA...
+Compiling module xil_defaultlib.top_gmem_m_axi_reg_slice(DATA_WI...
+Compiling module xil_defaultlib.top_gmem_m_axi_write(CONSERVATIV...
+Compiling module xil_defaultlib.top_gmem_m_axi_reg_slice(DATA_WI...
+Compiling module xil_defaultlib.top_gmem_m_axi_read(C_USER_VALUE...
+Compiling module xil_defaultlib.top_gmem_m_axi(CONSERVATIVE=1,C_...
+Compiling module xil_defaultlib.top_entry_proc
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=23,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=8,length=0)\]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=4,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_19.special_detect [\special_detect(a_fw=24,op_delay...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_to_flt_conv_exp [\flt_to_flt_conv_exp(r_w=64,r_ew...]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_to_flt_conv [\flt_to_flt_conv(c_xdevicefamily...]
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=64,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19_viv [\floating_point_v7_1_19_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19 [\floating_point_v7_1_19(c_xdevic...]
+Compiling module xil_defaultlib.top_fpext_32ns_64_2_no_dsp_1_ip
+Compiling module xil_defaultlib.top_fpext_32ns_64_2_no_dsp_1(dou...
+Compiling module xil_defaultlib.top_sparsemux_9_3_17_1_1(din0_WI...
+Compiling module xil_defaultlib.top_flow_control_loop_delay_pipe
+Compiling module xil_defaultlib.top_read_task
+Compiling module xil_defaultlib.top_mul_17s_15s_32_1_1(NUM_STAGE...
+Compiling module xil_defaultlib.top_mul_17s_15ns_32_1_1(NUM_STAG...
+Compiling module xil_defaultlib.top_mul_17s_14s_31_1_1(NUM_STAGE...
+Compiling module xil_defaultlib.top_mul_17s_12ns_29_1_1(NUM_STAG...
+Compiling module xil_defaultlib.top_mul_17s_14ns_31_1_1(NUM_STAG...
+Compiling module xil_defaultlib.top_mul_17s_13ns_30_1_1(NUM_STAG...
+Compiling module xil_defaultlib.top_mul_17s_13s_30_1_1(NUM_STAGE...
+Compiling module xil_defaultlib.top_fir
+Compiling module xil_defaultlib.top_ctlz_19_19_1_1(din_WIDTH=19,...
+Compiling module xil_defaultlib.top_flow_control_loop_pipe_seque...
+Compiling module xil_defaultlib.top_write_task_Pipeline_VITIS_LO...
+Compiling module xil_defaultlib.top_write_task
+Compiling module xil_defaultlib.top_fifo_w64_d4_S_ShiftReg
+Compiling module xil_defaultlib.top_fifo_w64_d4_S_default
+Compiling module xil_defaultlib.top_fifo_w32_d2_S_ShiftReg
+Compiling module xil_defaultlib.top_fifo_w32_d2_S_default
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.AESL_axi_master_gmem
+Compiling module xil_defaultlib.AESL_axi_slave_control
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(OUT_CH...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_I...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_I...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_I...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit_defaul...
+Compiling module xil_defaultlib.AESL_deadlock_detector_2
+Compiling module xil_defaultlib.df_fifo_intf_default
+Compiling module xil_defaultlib.df_process_intf_default
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_top_top
+Compiling module work.glbl
+Built simulation snapshot top
+
+****** xsim v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sun Feb 23 14:51:26 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/top/xsim_script.tcl
+# xsim {top} -autoloadwcfg -tclbatch {top.tcl}
+Time resolution is 1 ps
+source top.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 3 [0.00%] @ "128000"
+// RTL Simulation : 1 / 3 [100.00%] @ "16268000"
+// RTL Simulation : 2 / 3 [100.00%] @ "32253000"
+// RTL Simulation : 3 / 3 [100.00%] @ "48238000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 48267500 ps : File "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/sim/verilog/top.autotb.v" Line 435
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Feb 23 14:51:31 2025...
+Test 0 checked:
+Max ABS error in y[n] = 9.50694e-05 <= error tolerence of 0.0001
+Test 1 checked:
+Max ABS error in y[n] = 7.32541e-05 <= error tolerence of 0.0001
+Test 2 checked:
+Max ABS error in y[n] = 8.98838e-05 <= error tolerence of 0.0001

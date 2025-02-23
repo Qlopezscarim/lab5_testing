@@ -1,0 +1,39 @@
+/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/.autopilot/db/fir.pp.0.cpp:2259:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/.autopilot/db/fir.pp.0.cpp:2259:5: note: FIX-IT applied suggested code changes
+/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/.autopilot/db/fir.pp.0.cpp:2273:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/.autopilot/db/fir.pp.0.cpp:2273:5: note: FIX-IT applied suggested code changes
+/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/.autopilot/db/fir.pp.0.cpp:2287:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/.autopilot/db/fir.pp.0.cpp:2287:5: note: FIX-IT applied suggested code changes
+/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/.autopilot/db/fir.pp.0.cpp:3921:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/.autopilot/db/fir.pp.0.cpp:3921:7: note: FIX-IT applied suggested code changes
+/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/.autopilot/db/fir.pp.0.cpp:5773:42: error: Invalid Directive: for current device, fifo +  is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=y type=fifo
+                                         ^
+/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/.autopilot/db/fir.pp.0.cpp:5776:9: error: Invalid Directive: for current device, mul + fabric is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=y op=mul impl=fabric latency=0
+        ^
+/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/.autopilot/db/fir.pp.0.cpp:5777:9: error: Invalid Directive: for current device, add + fabric is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS bind_op variable=y op=add impl=fabric latency=0
+        ^
+/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/.autopilot/db/fir.pp.0.cpp:5793:5: warning: Added loop label VITIS_LOOP_43_1:   [xilinx-label-all-loops]
+    for(int i=0; i < N; i++)
+    ^~~
+    VITIS_LOOP_43_1: 
+/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/.autopilot/db/fir.pp.0.cpp:5793:5: note: FIX-IT applied suggested code changes
+/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/.autopilot/db/fir.pp.0.cpp:5804:5: warning: Added loop label VITIS_LOOP_54_1:   [xilinx-label-all-loops]
+    for(int i=0; i < N; i++)
+    ^~~
+    VITIS_LOOP_54_1: 
+/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/.autopilot/db/fir.pp.0.cpp:5804:5: note: FIX-IT applied suggested code changes

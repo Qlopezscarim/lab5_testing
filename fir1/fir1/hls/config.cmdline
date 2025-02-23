@@ -1,0 +1,3 @@
+relativeroot=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1
+original_argv=--mode hls --impl --config /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/hls_config.cfg --work_dir fir1 
+

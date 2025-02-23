@@ -1,0 +1,24 @@
+
+
+Implementation tool: Xilinx Vivado v.2024.2
+Project:             fir1
+Solution:            hls
+Device target:       xczu48dr-ffvg1517-2-e
+Report date:         Sun Feb 23 15:03:06 EST 2025
+
+#=== Post-Implementation Resource usage ===
+SLICE:            0
+LUT:           4485
+FF:            4700
+DSP:              0
+BRAM:            21
+URAM:             0
+LATCH:            0
+SRL:            885
+CLB:           1035
+
+#=== Final timing ===
+CP required:                     5.000
+CP achieved post-synthesis:      3.037
+CP achieved post-implementation: 3.490
+Timing met

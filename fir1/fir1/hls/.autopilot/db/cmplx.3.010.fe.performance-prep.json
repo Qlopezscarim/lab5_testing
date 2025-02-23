@@ -1,0 +1,51 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "2 3 1",
+    "file": "fir.cpp",
+    "fileloc": 62,
+    "instructions": 16,
+    "name": "top",
+    "total_instructions": 318
+  },
+  "1": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "fir.cpp",
+    "fileloc": 51,
+    "instructions": 86,
+    "loads": {
+      "L": 1
+    },
+    "name": "write_task",
+    "total_instructions": 86
+  },
+  "2": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "fir.cpp",
+    "fileloc": 40,
+    "instructions": 72,
+    "name": "read_task",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 72
+  },
+  "3": {
+    "basicblocks": 31,
+    "calls": "",
+    "file": "fir.cpp",
+    "fileloc": 7,
+    "instructions": 144,
+    "loads": {
+      "G": 1,
+      "L": 19
+    },
+    "name": "fir",
+    "stores": {
+      "L": 21
+    },
+    "total_instructions": 144
+  }
+}

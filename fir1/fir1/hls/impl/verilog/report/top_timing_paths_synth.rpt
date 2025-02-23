@@ -1,0 +1,773 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date              : Sun Feb 23 14:58:52 2025
+| Host              : ece-lnx-4511c running 64-bit Red Hat Enterprise Linux Server release 7.9 (Maipo)
+| Command           : report_timing -max_paths 10 -file ./report/top_timing_paths_synth.rpt
+| Design            : bd_0_wrapper
+| Device            : xczu48dr-ffvg1517
+| Speed File        : -2  PRODUCTION 1.32 01-31-2021
+| Design State      : Synthesized
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             1.963ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[18]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.020ns  (logic 1.177ns (38.974%)  route 1.843ns (61.026%))
+  Logic Levels:           12  (CARRY8=6 LUT1=1 LUT2=2 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.007ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns = ( 5.021 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.028ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5893, unset)         0.028     0.028    bd_0_i/hls_inst/inst/fir_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.105 r  bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/Q
+                         net (fo=18, unplaced)        0.184     0.289    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/Q[6]
+                         LUT2 (Prop_LUT2_I1_O)        0.070     0.359 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_103/O
+                         net (fo=1, unplaced)         0.253     0.612    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_103_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_O[5])
+                                                      0.208     0.820 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_77/O[5]
+                         net (fo=4, unplaced)         0.153     0.973    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_77_n_13
+                         LUT2 (Prop_LUT2_I0_O)        0.105     1.078 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_76/O
+                         net (fo=1, unplaced)         0.231     1.309    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_76_n_3
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.097     1.406 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_45/CO[7]
+                         net (fo=1, unplaced)         0.005     1.411    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_45_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.076     1.487 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_49/O[1]
+                         net (fo=3, unplaced)         0.189     1.676    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_49_n_17
+                         LUT3 (Prop_LUT3_I1_O)        0.038     1.714 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_58/O
+                         net (fo=2, unplaced)         0.185     1.899    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_58_n_3
+                         LUT5 (Prop_LUT5_I1_O)        0.038     1.937 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_30/O
+                         net (fo=2, unplaced)         0.185     2.122    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_30_n_3
+                         LUT6 (Prop_LUT6_I0_O)        0.037     2.159 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_38/O
+                         net (fo=1, unplaced)         0.029     2.188    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_38_n_3
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.166     2.354 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_9/CO[7]
+                         net (fo=1, unplaced)         0.005     2.359    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_9_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[6])
+                                                      0.103     2.462 f  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_3/O[6]
+                         net (fo=4, unplaced)         0.150     2.612    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/mul_ln29_6_fu_544_p2[30]
+                         LUT1 (Prop_LUT1_I0_O)        0.068     2.680 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_2/O
+                         net (fo=1, unplaced)         0.248     2.928    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_2_n_3
+                         CARRY8 (Prop_CARRY8_DI[2]_O[3])
+                                                      0.094     3.022 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_1/O[3]
+                         net (fo=1, unplaced)         0.026     3.048    bd_0_i/hls_inst/inst/fir_U0/add_ln29_6_fu_554_p2[32]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[18]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=5893, unset)         0.021     5.021    bd_0_i/hls_inst/inst/fir_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[18]/C
+                         clock pessimism              0.000     5.021    
+                         clock uncertainty           -0.035     4.986    
+                         FDRE (Setup_FDRE_C_D)        0.025     5.011    bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[18]
+  -------------------------------------------------------------------
+                         required time                          5.011    
+                         arrival time                          -3.048    
+  -------------------------------------------------------------------
+                         slack                                  1.963    
+
+Slack (MET) :             2.062ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[16]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.921ns  (logic 1.258ns (43.067%)  route 1.663ns (56.933%))
+  Logic Levels:           13  (CARRY8=7 LUT2=3 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.007ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns = ( 5.021 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.028ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5893, unset)         0.028     0.028    bd_0_i/hls_inst/inst/fir_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.105 r  bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/Q
+                         net (fo=18, unplaced)        0.184     0.289    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/Q[6]
+                         LUT2 (Prop_LUT2_I1_O)        0.070     0.359 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_103/O
+                         net (fo=1, unplaced)         0.253     0.612    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_103_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_O[5])
+                                                      0.208     0.820 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_77/O[5]
+                         net (fo=4, unplaced)         0.153     0.973    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_77_n_13
+                         LUT2 (Prop_LUT2_I0_O)        0.105     1.078 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_76/O
+                         net (fo=1, unplaced)         0.231     1.309    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_76_n_3
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.097     1.406 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_45/CO[7]
+                         net (fo=1, unplaced)         0.005     1.411    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_45_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.076     1.487 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_49/O[1]
+                         net (fo=3, unplaced)         0.189     1.676    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_49_n_17
+                         LUT3 (Prop_LUT3_I1_O)        0.038     1.714 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_58/O
+                         net (fo=2, unplaced)         0.185     1.899    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_58_n_3
+                         LUT5 (Prop_LUT5_I1_O)        0.038     1.937 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_30/O
+                         net (fo=2, unplaced)         0.185     2.122    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_30_n_3
+                         LUT6 (Prop_LUT6_I0_O)        0.037     2.159 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_38/O
+                         net (fo=1, unplaced)         0.029     2.188    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_38_n_3
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.166     2.354 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_9/CO[7]
+                         net (fo=1, unplaced)         0.005     2.359    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_9_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[2])
+                                                      0.067     2.426 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_3/O[2]
+                         net (fo=1, unplaced)         0.185     2.611    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/mul_ln29_6_fu_544_p2[26]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     2.648 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[14]_i_5/O
+                         net (fo=1, unplaced)         0.029     2.677    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[14]_i_5_n_3
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.166     2.843 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[14]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.005     2.848    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[14]_i_1_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.076     2.924 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_1/O[1]
+                         net (fo=1, unplaced)         0.025     2.949    bd_0_i/hls_inst/inst/fir_U0/add_ln29_6_fu_554_p2[30]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[16]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=5893, unset)         0.021     5.021    bd_0_i/hls_inst/inst/fir_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[16]/C
+                         clock pessimism              0.000     5.021    
+                         clock uncertainty           -0.035     4.986    
+                         FDRE (Setup_FDRE_C_D)        0.025     5.011    bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[16]
+  -------------------------------------------------------------------
+                         required time                          5.011    
+                         arrival time                          -2.949    
+  -------------------------------------------------------------------
+                         slack                                  2.062    
+
+Slack (MET) :             2.070ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[17]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.913ns  (logic 1.249ns (42.877%)  route 1.664ns (57.123%))
+  Logic Levels:           13  (CARRY8=7 LUT2=3 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.007ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns = ( 5.021 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.028ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5893, unset)         0.028     0.028    bd_0_i/hls_inst/inst/fir_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.105 r  bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/Q
+                         net (fo=18, unplaced)        0.184     0.289    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/Q[6]
+                         LUT2 (Prop_LUT2_I1_O)        0.070     0.359 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_103/O
+                         net (fo=1, unplaced)         0.253     0.612    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_103_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_O[5])
+                                                      0.208     0.820 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_77/O[5]
+                         net (fo=4, unplaced)         0.153     0.973    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_77_n_13
+                         LUT2 (Prop_LUT2_I0_O)        0.105     1.078 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_76/O
+                         net (fo=1, unplaced)         0.231     1.309    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_76_n_3
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.097     1.406 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_45/CO[7]
+                         net (fo=1, unplaced)         0.005     1.411    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_45_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.076     1.487 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_49/O[1]
+                         net (fo=3, unplaced)         0.189     1.676    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_49_n_17
+                         LUT3 (Prop_LUT3_I1_O)        0.038     1.714 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_58/O
+                         net (fo=2, unplaced)         0.185     1.899    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_58_n_3
+                         LUT5 (Prop_LUT5_I1_O)        0.038     1.937 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_30/O
+                         net (fo=2, unplaced)         0.185     2.122    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_30_n_3
+                         LUT6 (Prop_LUT6_I0_O)        0.037     2.159 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_38/O
+                         net (fo=1, unplaced)         0.029     2.188    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_38_n_3
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.166     2.354 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_9/CO[7]
+                         net (fo=1, unplaced)         0.005     2.359    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_9_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[2])
+                                                      0.067     2.426 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_3/O[2]
+                         net (fo=1, unplaced)         0.185     2.611    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/mul_ln29_6_fu_544_p2[26]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     2.648 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[14]_i_5/O
+                         net (fo=1, unplaced)         0.029     2.677    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[14]_i_5_n_3
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.166     2.843 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[14]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.005     2.848    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[14]_i_1_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[2])
+                                                      0.067     2.915 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_1/O[2]
+                         net (fo=1, unplaced)         0.026     2.941    bd_0_i/hls_inst/inst/fir_U0/add_ln29_6_fu_554_p2[31]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[17]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=5893, unset)         0.021     5.021    bd_0_i/hls_inst/inst/fir_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[17]/C
+                         clock pessimism              0.000     5.021    
+                         clock uncertainty           -0.035     4.986    
+                         FDRE (Setup_FDRE_C_D)        0.025     5.011    bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[17]
+  -------------------------------------------------------------------
+                         required time                          5.011    
+                         arrival time                          -2.941    
+  -------------------------------------------------------------------
+                         slack                                  2.070    
+
+Slack (MET) :             2.082ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.901ns  (logic 1.238ns (42.675%)  route 1.663ns (57.325%))
+  Logic Levels:           13  (CARRY8=7 LUT2=3 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.007ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns = ( 5.021 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.028ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5893, unset)         0.028     0.028    bd_0_i/hls_inst/inst/fir_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.105 r  bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/Q
+                         net (fo=18, unplaced)        0.184     0.289    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/Q[6]
+                         LUT2 (Prop_LUT2_I1_O)        0.070     0.359 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_103/O
+                         net (fo=1, unplaced)         0.253     0.612    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_103_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_O[5])
+                                                      0.208     0.820 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_77/O[5]
+                         net (fo=4, unplaced)         0.153     0.973    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_77_n_13
+                         LUT2 (Prop_LUT2_I0_O)        0.105     1.078 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_76/O
+                         net (fo=1, unplaced)         0.231     1.309    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_76_n_3
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.097     1.406 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_45/CO[7]
+                         net (fo=1, unplaced)         0.005     1.411    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_45_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.076     1.487 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_49/O[1]
+                         net (fo=3, unplaced)         0.189     1.676    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_49_n_17
+                         LUT3 (Prop_LUT3_I1_O)        0.038     1.714 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_58/O
+                         net (fo=2, unplaced)         0.185     1.899    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_58_n_3
+                         LUT5 (Prop_LUT5_I1_O)        0.038     1.937 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_30/O
+                         net (fo=2, unplaced)         0.185     2.122    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_30_n_3
+                         LUT6 (Prop_LUT6_I0_O)        0.037     2.159 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_38/O
+                         net (fo=1, unplaced)         0.029     2.188    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_38_n_3
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.166     2.354 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_9/CO[7]
+                         net (fo=1, unplaced)         0.005     2.359    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_9_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[2])
+                                                      0.067     2.426 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_3/O[2]
+                         net (fo=1, unplaced)         0.185     2.611    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/mul_ln29_6_fu_544_p2[26]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     2.648 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[14]_i_5/O
+                         net (fo=1, unplaced)         0.029     2.677    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[14]_i_5_n_3
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.166     2.843 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[14]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.005     2.848    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[14]_i_1_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.056     2.904 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_1/O[0]
+                         net (fo=1, unplaced)         0.025     2.929    bd_0_i/hls_inst/inst/fir_U0/add_ln29_6_fu_554_p2[29]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=5893, unset)         0.021     5.021    bd_0_i/hls_inst/inst/fir_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[15]/C
+                         clock pessimism              0.000     5.021    
+                         clock uncertainty           -0.035     4.986    
+                         FDRE (Setup_FDRE_C_D)        0.025     5.011    bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[15]
+  -------------------------------------------------------------------
+                         required time                          5.011    
+                         arrival time                          -2.929    
+  -------------------------------------------------------------------
+                         slack                                  2.082    
+
+Slack (MET) :             2.129ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[14]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.854ns  (logic 1.192ns (41.766%)  route 1.662ns (58.234%))
+  Logic Levels:           12  (CARRY8=6 LUT2=3 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.007ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns = ( 5.021 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.028ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5893, unset)         0.028     0.028    bd_0_i/hls_inst/inst/fir_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.105 r  bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/Q
+                         net (fo=18, unplaced)        0.184     0.289    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/Q[6]
+                         LUT2 (Prop_LUT2_I1_O)        0.070     0.359 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_103/O
+                         net (fo=1, unplaced)         0.253     0.612    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_103_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_O[5])
+                                                      0.208     0.820 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_77/O[5]
+                         net (fo=4, unplaced)         0.153     0.973    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_77_n_13
+                         LUT2 (Prop_LUT2_I0_O)        0.105     1.078 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_76/O
+                         net (fo=1, unplaced)         0.231     1.309    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_76_n_3
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.097     1.406 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_45/CO[7]
+                         net (fo=1, unplaced)         0.005     1.411    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_45_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.076     1.487 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_49/O[1]
+                         net (fo=3, unplaced)         0.189     1.676    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_49_n_17
+                         LUT3 (Prop_LUT3_I1_O)        0.038     1.714 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_58/O
+                         net (fo=2, unplaced)         0.185     1.899    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_58_n_3
+                         LUT5 (Prop_LUT5_I1_O)        0.038     1.937 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_30/O
+                         net (fo=2, unplaced)         0.185     2.122    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_30_n_3
+                         LUT6 (Prop_LUT6_I0_O)        0.037     2.159 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_38/O
+                         net (fo=1, unplaced)         0.029     2.188    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_38_n_3
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.166     2.354 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_9/CO[7]
+                         net (fo=1, unplaced)         0.005     2.359    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_9_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.056     2.415 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_3/O[0]
+                         net (fo=1, unplaced)         0.185     2.600    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/mul_ln29_6_fu_544_p2[24]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     2.637 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[14]_i_7/O
+                         net (fo=1, unplaced)         0.032     2.669    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[14]_i_7_n_3
+                         CARRY8 (Prop_CARRY8_S[3]_O[7])
+                                                      0.187     2.856 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[14]_i_1/O[7]
+                         net (fo=1, unplaced)         0.026     2.882    bd_0_i/hls_inst/inst/fir_U0/add_ln29_6_fu_554_p2[28]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=5893, unset)         0.021     5.021    bd_0_i/hls_inst/inst/fir_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[14]/C
+                         clock pessimism              0.000     5.021    
+                         clock uncertainty           -0.035     4.986    
+                         FDRE (Setup_FDRE_C_D)        0.025     5.011    bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[14]
+  -------------------------------------------------------------------
+                         required time                          5.011    
+                         arrival time                          -2.882    
+  -------------------------------------------------------------------
+                         slack                                  2.129    
+
+Slack (MET) :             2.133ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[12]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.850ns  (logic 1.189ns (41.719%)  route 1.661ns (58.281%))
+  Logic Levels:           12  (CARRY8=6 LUT2=3 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.007ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns = ( 5.021 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.028ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5893, unset)         0.028     0.028    bd_0_i/hls_inst/inst/fir_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.105 r  bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/Q
+                         net (fo=18, unplaced)        0.184     0.289    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/Q[6]
+                         LUT2 (Prop_LUT2_I1_O)        0.070     0.359 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_103/O
+                         net (fo=1, unplaced)         0.253     0.612    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_103_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_O[5])
+                                                      0.208     0.820 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_77/O[5]
+                         net (fo=4, unplaced)         0.153     0.973    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_77_n_13
+                         LUT2 (Prop_LUT2_I0_O)        0.105     1.078 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_76/O
+                         net (fo=1, unplaced)         0.231     1.309    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_76_n_3
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.097     1.406 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_45/CO[7]
+                         net (fo=1, unplaced)         0.005     1.411    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_45_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.076     1.487 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_49/O[1]
+                         net (fo=3, unplaced)         0.189     1.676    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_49_n_17
+                         LUT3 (Prop_LUT3_I1_O)        0.038     1.714 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_58/O
+                         net (fo=2, unplaced)         0.185     1.899    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_58_n_3
+                         LUT5 (Prop_LUT5_I1_O)        0.038     1.937 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_30/O
+                         net (fo=2, unplaced)         0.185     2.122    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_30_n_3
+                         LUT6 (Prop_LUT6_I0_O)        0.037     2.159 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_38/O
+                         net (fo=1, unplaced)         0.029     2.188    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_38_n_3
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.166     2.354 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_9/CO[7]
+                         net (fo=1, unplaced)         0.005     2.359    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_9_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.056     2.415 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_3/O[0]
+                         net (fo=1, unplaced)         0.185     2.600    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/mul_ln29_6_fu_544_p2[24]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     2.637 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[14]_i_7/O
+                         net (fo=1, unplaced)         0.032     2.669    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[14]_i_7_n_3
+                         CARRY8 (Prop_CARRY8_S[3]_O[5])
+                                                      0.184     2.853 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[14]_i_1/O[5]
+                         net (fo=1, unplaced)         0.025     2.878    bd_0_i/hls_inst/inst/fir_U0/add_ln29_6_fu_554_p2[26]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=5893, unset)         0.021     5.021    bd_0_i/hls_inst/inst/fir_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[12]/C
+                         clock pessimism              0.000     5.021    
+                         clock uncertainty           -0.035     4.986    
+                         FDRE (Setup_FDRE_C_D)        0.025     5.011    bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[12]
+  -------------------------------------------------------------------
+                         required time                          5.011    
+                         arrival time                          -2.878    
+  -------------------------------------------------------------------
+                         slack                                  2.133    
+
+Slack (MET) :             2.144ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.839ns  (logic 1.177ns (41.458%)  route 1.662ns (58.542%))
+  Logic Levels:           12  (CARRY8=6 LUT2=3 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.007ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns = ( 5.021 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.028ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5893, unset)         0.028     0.028    bd_0_i/hls_inst/inst/fir_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.105 r  bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/Q
+                         net (fo=18, unplaced)        0.184     0.289    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/Q[6]
+                         LUT2 (Prop_LUT2_I1_O)        0.070     0.359 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_103/O
+                         net (fo=1, unplaced)         0.253     0.612    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_103_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_O[5])
+                                                      0.208     0.820 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_77/O[5]
+                         net (fo=4, unplaced)         0.153     0.973    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_77_n_13
+                         LUT2 (Prop_LUT2_I0_O)        0.105     1.078 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_76/O
+                         net (fo=1, unplaced)         0.231     1.309    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_76_n_3
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.097     1.406 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_45/CO[7]
+                         net (fo=1, unplaced)         0.005     1.411    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_45_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.076     1.487 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_49/O[1]
+                         net (fo=3, unplaced)         0.189     1.676    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_49_n_17
+                         LUT3 (Prop_LUT3_I1_O)        0.038     1.714 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_58/O
+                         net (fo=2, unplaced)         0.185     1.899    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_58_n_3
+                         LUT5 (Prop_LUT5_I1_O)        0.038     1.937 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_30/O
+                         net (fo=2, unplaced)         0.185     2.122    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_30_n_3
+                         LUT6 (Prop_LUT6_I0_O)        0.037     2.159 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_38/O
+                         net (fo=1, unplaced)         0.029     2.188    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_38_n_3
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.166     2.354 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_9/CO[7]
+                         net (fo=1, unplaced)         0.005     2.359    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_9_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.056     2.415 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_3/O[0]
+                         net (fo=1, unplaced)         0.185     2.600    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/mul_ln29_6_fu_544_p2[24]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     2.637 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[14]_i_7/O
+                         net (fo=1, unplaced)         0.032     2.669    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[14]_i_7_n_3
+                         CARRY8 (Prop_CARRY8_S[3]_O[6])
+                                                      0.172     2.841 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[14]_i_1/O[6]
+                         net (fo=1, unplaced)         0.026     2.867    bd_0_i/hls_inst/inst/fir_U0/add_ln29_6_fu_554_p2[27]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=5893, unset)         0.021     5.021    bd_0_i/hls_inst/inst/fir_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[13]/C
+                         clock pessimism              0.000     5.021    
+                         clock uncertainty           -0.035     4.986    
+                         FDRE (Setup_FDRE_C_D)        0.025     5.011    bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[13]
+  -------------------------------------------------------------------
+                         required time                          5.011    
+                         arrival time                          -2.867    
+  -------------------------------------------------------------------
+                         slack                                  2.144    
+
+Slack (MET) :             2.168ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[11]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.815ns  (logic 1.154ns (40.995%)  route 1.661ns (59.005%))
+  Logic Levels:           12  (CARRY8=6 LUT2=3 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.007ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns = ( 5.021 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.028ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5893, unset)         0.028     0.028    bd_0_i/hls_inst/inst/fir_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.105 r  bd_0_i/hls_inst/inst/fir_U0/reg_6_fu_116_reg[6]/Q
+                         net (fo=18, unplaced)        0.184     0.289    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/Q[6]
+                         LUT2 (Prop_LUT2_I1_O)        0.070     0.359 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_103/O
+                         net (fo=1, unplaced)         0.253     0.612    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_103_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_O[5])
+                                                      0.208     0.820 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_77/O[5]
+                         net (fo=4, unplaced)         0.153     0.973    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_77_n_13
+                         LUT2 (Prop_LUT2_I0_O)        0.105     1.078 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_76/O
+                         net (fo=1, unplaced)         0.231     1.309    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[6]_i_76_n_3
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.097     1.406 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_45/CO[7]
+                         net (fo=1, unplaced)         0.005     1.411    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[6]_i_45_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.076     1.487 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_49/O[1]
+                         net (fo=3, unplaced)         0.189     1.676    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_49_n_17
+                         LUT3 (Prop_LUT3_I1_O)        0.038     1.714 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_58/O
+                         net (fo=2, unplaced)         0.185     1.899    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_58_n_3
+                         LUT5 (Prop_LUT5_I1_O)        0.038     1.937 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_30/O
+                         net (fo=2, unplaced)         0.185     2.122    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_30_n_3
+                         LUT6 (Prop_LUT6_I0_O)        0.037     2.159 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_38/O
+                         net (fo=1, unplaced)         0.029     2.188    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[18]_i_38_n_3
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.166     2.354 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_9/CO[7]
+                         net (fo=1, unplaced)         0.005     2.359    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_9_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.056     2.415 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[18]_i_3/O[0]
+                         net (fo=1, unplaced)         0.185     2.600    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/mul_ln29_6_fu_544_p2[24]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     2.637 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[14]_i_7/O
+                         net (fo=1, unplaced)         0.032     2.669    bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787[14]_i_7_n_3
+                         CARRY8 (Prop_CARRY8_S[3]_O[4])
+                                                      0.149     2.818 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_14ns_31_1_1_U17/tmp_1_reg_787_reg[14]_i_1/O[4]
+                         net (fo=1, unplaced)         0.025     2.843    bd_0_i/hls_inst/inst/fir_U0/add_ln29_6_fu_554_p2[25]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=5893, unset)         0.021     5.021    bd_0_i/hls_inst/inst/fir_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[11]/C
+                         clock pessimism              0.000     5.021    
+                         clock uncertainty           -0.035     4.986    
+                         FDRE (Setup_FDRE_C_D)        0.025     5.011    bd_0_i/hls_inst/inst/fir_U0/tmp_1_reg_787_reg[11]
+  -------------------------------------------------------------------
+                         required time                          5.011    
+                         arrival time                          -2.843    
+  -------------------------------------------------------------------
+                         slack                                  2.168    
+
+Slack (MET) :             2.244ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/fir_U0/reg_11_reg_746_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            bd_0_i/hls_inst/inst/fir_U0/tmp_8_reg_772_reg[18]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.739ns  (logic 1.104ns (40.307%)  route 1.635ns (59.693%))
+  Logic Levels:           11  (CARRY8=6 LUT1=1 LUT2=1 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.007ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns = ( 5.021 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.028ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5893, unset)         0.028     0.028    bd_0_i/hls_inst/inst/fir_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/reg_11_reg_746_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.105 r  bd_0_i/hls_inst/inst/fir_U0/reg_11_reg_746_reg[1]/Q
+                         net (fo=13, unplaced)        0.176     0.281    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/Q[1]
+                         LUT2 (Prop_LUT2_I1_O)        0.070     0.351 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772[6]_i_86/O
+                         net (fo=1, unplaced)         0.253     0.604    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772[6]_i_86_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.140     0.744 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772_reg[6]_i_47/CO[7]
+                         net (fo=1, unplaced)         0.005     0.749    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772_reg[6]_i_47_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[4])
+                                                      0.086     0.835 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772_reg[6]_i_45/O[4]
+                         net (fo=1, unplaced)         0.185     1.020    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772_reg[6]_i_45_n_14
+                         CARRY8 (Prop_CARRY8_S[0]_O[4])
+                                                      0.206     1.226 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772_reg[14]_i_55/O[4]
+                         net (fo=3, unplaced)         0.189     1.415    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772_reg[14]_i_55_n_14
+                         LUT3 (Prop_LUT3_I1_O)        0.038     1.453 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772[14]_i_69/O
+                         net (fo=2, unplaced)         0.185     1.638    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772[14]_i_69_n_3
+                         LUT5 (Prop_LUT5_I1_O)        0.038     1.676 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772[14]_i_36/O
+                         net (fo=2, unplaced)         0.185     1.861    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772[14]_i_36_n_3
+                         LUT6 (Prop_LUT6_I0_O)        0.037     1.898 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772[14]_i_44/O
+                         net (fo=1, unplaced)         0.023     1.921    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772[14]_i_44_n_3
+                         CARRY8 (Prop_CARRY8_S[6]_CO[7])
+                                                      0.124     2.045 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772_reg[14]_i_12/CO[7]
+                         net (fo=1, unplaced)         0.005     2.050    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772_reg[14]_i_12_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[6])
+                                                      0.103     2.153 f  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772_reg[14]_i_2/O[6]
+                         net (fo=4, unplaced)         0.150     2.303    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/mul_ln29_3_fu_415_p2[28]
+                         LUT1 (Prop_LUT1_I0_O)        0.070     2.373 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772[18]_i_3/O
+                         net (fo=1, unplaced)         0.253     2.626    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772[18]_i_3_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_O[3])
+                                                      0.115     2.741 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772_reg[18]_i_1/O[3]
+                         net (fo=1, unplaced)         0.026     2.767    bd_0_i/hls_inst/inst/fir_U0/add_ln29_3_fu_425_p2[32]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/tmp_8_reg_772_reg[18]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=5893, unset)         0.021     5.021    bd_0_i/hls_inst/inst/fir_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/tmp_8_reg_772_reg[18]/C
+                         clock pessimism              0.000     5.021    
+                         clock uncertainty           -0.035     4.986    
+                         FDRE (Setup_FDRE_C_D)        0.025     5.011    bd_0_i/hls_inst/inst/fir_U0/tmp_8_reg_772_reg[18]
+  -------------------------------------------------------------------
+                         required time                          5.011    
+                         arrival time                          -2.767    
+  -------------------------------------------------------------------
+                         slack                                  2.244    
+
+Slack (MET) :             2.250ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/fir_U0/reg_11_reg_746_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            bd_0_i/hls_inst/inst/fir_U0/tmp_8_reg_772_reg[17]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        2.733ns  (logic 1.098ns (40.176%)  route 1.635ns (59.824%))
+  Logic Levels:           11  (CARRY8=6 LUT1=1 LUT2=1 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.007ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns = ( 5.021 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.028ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=5893, unset)         0.028     0.028    bd_0_i/hls_inst/inst/fir_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/reg_11_reg_746_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.105 r  bd_0_i/hls_inst/inst/fir_U0/reg_11_reg_746_reg[1]/Q
+                         net (fo=13, unplaced)        0.176     0.281    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/Q[1]
+                         LUT2 (Prop_LUT2_I1_O)        0.070     0.351 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772[6]_i_86/O
+                         net (fo=1, unplaced)         0.253     0.604    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772[6]_i_86_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_CO[7])
+                                                      0.140     0.744 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772_reg[6]_i_47/CO[7]
+                         net (fo=1, unplaced)         0.005     0.749    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772_reg[6]_i_47_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[4])
+                                                      0.086     0.835 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772_reg[6]_i_45/O[4]
+                         net (fo=1, unplaced)         0.185     1.020    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772_reg[6]_i_45_n_14
+                         CARRY8 (Prop_CARRY8_S[0]_O[4])
+                                                      0.206     1.226 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772_reg[14]_i_55/O[4]
+                         net (fo=3, unplaced)         0.189     1.415    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772_reg[14]_i_55_n_14
+                         LUT3 (Prop_LUT3_I1_O)        0.038     1.453 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772[14]_i_69/O
+                         net (fo=2, unplaced)         0.185     1.638    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772[14]_i_69_n_3
+                         LUT5 (Prop_LUT5_I1_O)        0.038     1.676 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772[14]_i_36/O
+                         net (fo=2, unplaced)         0.185     1.861    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772[14]_i_36_n_3
+                         LUT6 (Prop_LUT6_I0_O)        0.037     1.898 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772[14]_i_44/O
+                         net (fo=1, unplaced)         0.023     1.921    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772[14]_i_44_n_3
+                         CARRY8 (Prop_CARRY8_S[6]_CO[7])
+                                                      0.124     2.045 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772_reg[14]_i_12/CO[7]
+                         net (fo=1, unplaced)         0.005     2.050    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772_reg[14]_i_12_n_3
+                         CARRY8 (Prop_CARRY8_CI_O[6])
+                                                      0.103     2.153 f  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772_reg[14]_i_2/O[6]
+                         net (fo=4, unplaced)         0.150     2.303    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/mul_ln29_3_fu_415_p2[28]
+                         LUT1 (Prop_LUT1_I0_O)        0.070     2.373 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772[18]_i_3/O
+                         net (fo=1, unplaced)         0.253     2.626    bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772[18]_i_3_n_3
+                         CARRY8 (Prop_CARRY8_DI[0]_O[2])
+                                                      0.109     2.735 r  bd_0_i/hls_inst/inst/fir_U0/mul_17s_12ns_29_1_1_U14/tmp_8_reg_772_reg[18]_i_1/O[2]
+                         net (fo=1, unplaced)         0.026     2.761    bd_0_i/hls_inst/inst/fir_U0/add_ln29_3_fu_425_p2[31]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/tmp_8_reg_772_reg[17]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=5893, unset)         0.021     5.021    bd_0_i/hls_inst/inst/fir_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/fir_U0/tmp_8_reg_772_reg[17]/C
+                         clock pessimism              0.000     5.021    
+                         clock uncertainty           -0.035     4.986    
+                         FDRE (Setup_FDRE_C_D)        0.025     5.011    bd_0_i/hls_inst/inst/fir_U0/tmp_8_reg_772_reg[17]
+  -------------------------------------------------------------------
+                         required time                          5.011    
+                         arrival time                          -2.761    
+  -------------------------------------------------------------------
+                         slack                                  2.250    
+
+
+
+

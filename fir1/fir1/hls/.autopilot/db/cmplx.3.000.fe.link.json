@@ -1,0 +1,71 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "3 4 2",
+    "file": "fir.cpp",
+    "fileloc": 62,
+    "instructions": 20,
+    "name": "top",
+    "total_instructions": 1435
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "5",
+    "file": "fir.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 2,
+    "name": "",
+    "total_instructions": 3873
+  },
+  "2": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "fir.cpp",
+    "fileloc": 51,
+    "instructions": 20,
+    "name": "write_task",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 143
+  },
+  "3": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "fir.cpp",
+    "fileloc": 40,
+    "instructions": 26,
+    "loads": {
+      "L": 2
+    },
+    "name": "read_task",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 423
+  },
+  "4": {
+    "basicblocks": 21,
+    "calls": "",
+    "file": "fir.cpp",
+    "fileloc": 7,
+    "instructions": 85,
+    "loads": {
+      "L": 3
+    },
+    "name": "fir",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 849
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "fir.cpp",
+    "fileloc": 5,
+    "instructions": 11,
+    "name": "__cxx_global_var_init",
+    "total_instructions": 3871
+  }
+}

@@ -1,0 +1,614 @@
+
+*** Running vivado
+    with args -log bd_0_hls_inst_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+
+WARNING: /apps/xilinx24/Vivado/2024.2/tps/lnx64/jre11.0.16_1 does not exist.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sun Feb 23 14:54:27 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_0_hls_inst_0.tcl -notrace
+INFO: Dispatch client connection id - 34787
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1654.785 ; gain = 140.828 ; free physical = 97762 ; free virtual = 169785
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/apps/xilinx24/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+Command: synth_design -top bd_0_hls_inst_0 -part xczu48dr-ffvg1517-2-e -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu48dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu48dr'
+INFO: [Common 17-1540] The version limit for your license is '2024.12' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for new releases.
+INFO: [Device 21-403] Loading part xczu48dr-ffvg1517-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28407
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 2949.359 ; gain = 326.848 ; free physical = 96279 ; free virtual = 168371
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_input_r_RAM_AUTO_1R1W' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_input_r_RAM_AUTO_1R1W.v:8]
+INFO: [Synth 8-6157] synthesizing module 'top_input_r_RAM_AUTO_1R1W_memcore' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_input_r_RAM_AUTO_1R1W_memcore.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'top_input_r_RAM_AUTO_1R1W_memcore' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_input_r_RAM_AUTO_1R1W_memcore.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'top_input_r_RAM_AUTO_1R1W' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_input_r_RAM_AUTO_1R1W.v:8]
+INFO: [Synth 8-6157] synthesizing module 'top_output_r_RAM_AUTO_1R1W' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_output_r_RAM_AUTO_1R1W.v:8]
+INFO: [Synth 8-6157] synthesizing module 'top_output_r_RAM_AUTO_1R1W_memcore' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_output_r_RAM_AUTO_1R1W_memcore.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'top_output_r_RAM_AUTO_1R1W_memcore' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_output_r_RAM_AUTO_1R1W_memcore.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'top_output_r_RAM_AUTO_1R1W' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_output_r_RAM_AUTO_1R1W.v:8]
+INFO: [Synth 8-6157] synthesizing module 'top_control_s_axi' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_control_s_axi.v:227]
+INFO: [Synth 8-6155] done synthesizing module 'top_control_s_axi' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:12]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_store' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:815]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_fifo' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_srl' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_srl' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_fifo' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_fifo__parameterized0' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_mem' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2811]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_mem' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2811]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_fifo__parameterized0' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_fifo__parameterized1' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_srl__parameterized0' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_srl__parameterized0' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_fifo__parameterized1' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_fifo__parameterized2' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_srl__parameterized1' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_srl__parameterized1' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_fifo__parameterized2' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2579]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_store' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:815]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_load' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:323]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_fifo__parameterized3' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_mem__parameterized0' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2811]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_mem__parameterized0' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2811]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_fifo__parameterized3' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2579]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_load' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:323]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_write' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:1625]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_burst_converter' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:1945]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_reg_slice' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2477]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_reg_slice' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2477]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_burst_converter' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:1945]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_fifo__parameterized4' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_srl__parameterized2' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_srl__parameterized2' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_fifo__parameterized4' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_throttle' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2251]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_reg_slice__parameterized0' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2477]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_reg_slice__parameterized0' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2477]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_fifo__parameterized5' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_srl__parameterized3' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_srl__parameterized3' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_fifo__parameterized5' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_fifo__parameterized6' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_srl__parameterized4' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_srl__parameterized4' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_fifo__parameterized6' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2579]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_throttle' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2251]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_reg_slice__parameterized1' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2477]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_reg_slice__parameterized1' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2477]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:1936]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:1939]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_write' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:1625]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_read' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:1433]
+INFO: [Synth 8-6157] synthesizing module 'top_gmem_m_axi_reg_slice__parameterized2' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2477]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_reg_slice__parameterized2' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:2477]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:1617]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi_read' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:1433]
+INFO: [Synth 8-6155] done synthesizing module 'top_gmem_m_axi' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_gmem_m_axi.v:12]
+INFO: [Synth 8-6157] synthesizing module 'top_entry_proc' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_entry_proc.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_entry_proc' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_entry_proc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_read_task' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_fpext_32ns_64_2_no_dsp_1' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_fpext_32ns_64_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_fpext_32ns_64_2_no_dsp_1_ip' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/ip/top_fpext_32ns_64_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/apps/xilinx24/Vivado/2024.2/scripts/rt/data/unisim_comp_diablo.v:87650]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [/apps/xilinx24/Vivado/2024.2/scripts/rt/data/unisim_comp_diablo.v:87650]
+INFO: [Synth 8-6155] done synthesizing module 'top_fpext_32ns_64_2_no_dsp_1_ip' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/ip/top_fpext_32ns_64_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'top_fpext_32ns_64_2_no_dsp_1' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_fpext_32ns_64_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_sparsemux_9_3_17_1_1' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_sparsemux_9_3_17_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_sparsemux_9_3_17_1_1' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_sparsemux_9_3_17_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_flow_control_loop_delay_pipe' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_flow_control_loop_delay_pipe.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'top_flow_control_loop_delay_pipe' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_flow_control_loop_delay_pipe.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'top_read_task' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_fir' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_fir.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_mul_17s_15s_32_1_1' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_mul_17s_15s_32_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_mul_17s_15s_32_1_1' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_mul_17s_15s_32_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'top_mul_17s_15ns_32_1_1' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_mul_17s_15ns_32_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_mul_17s_15ns_32_1_1' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_mul_17s_15ns_32_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'top_mul_17s_14s_31_1_1' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_mul_17s_14s_31_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_mul_17s_14s_31_1_1' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_mul_17s_14s_31_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'top_mul_17s_12ns_29_1_1' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_mul_17s_12ns_29_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_mul_17s_12ns_29_1_1' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_mul_17s_12ns_29_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'top_mul_17s_14ns_31_1_1' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_mul_17s_14ns_31_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_mul_17s_14ns_31_1_1' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_mul_17s_14ns_31_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'top_mul_17s_13ns_30_1_1' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_mul_17s_13ns_30_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_mul_17s_13ns_30_1_1' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_mul_17s_13ns_30_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'top_mul_17s_13s_30_1_1' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_mul_17s_13s_30_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_mul_17s_13s_30_1_1' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_mul_17s_13s_30_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_fir' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_fir.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_write_task' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_write_task.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_write_task_Pipeline_VITIS_LOOP_54_1' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_write_task_Pipeline_VITIS_LOOP_54_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_ctlz_19_19_1_1' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_ctlz_19_19_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'top_ctlz_19_19_1_1' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_ctlz_19_19_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'top_flow_control_loop_pipe_sequential_init' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'top_flow_control_loop_pipe_sequential_init' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'top_write_task_Pipeline_VITIS_LOOP_54_1' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_write_task_Pipeline_VITIS_LOOP_54_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_write_task' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_write_task.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_fifo_w64_d4_S' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_fifo_w64_d4_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'top_fifo_w64_d4_S_ShiftReg' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_fifo_w64_d4_S.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'top_fifo_w64_d4_S_ShiftReg' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_fifo_w64_d4_S.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'top_fifo_w64_d4_S' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_fifo_w64_d4_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'top_fifo_w32_d2_S' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_fifo_w32_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'top_fifo_w32_d2_S_ShiftReg' [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_fifo_w32_d2_S.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'top_fifo_w32_d2_S_ShiftReg' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_fifo_w32_d2_S.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'top_fifo_w32_d2_S' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_fifo_w32_d2_S.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_control_s_axi.v:303]
+WARNING: [Synth 8-6014] Unused sequential element icmp_ln43_1_reg_585_pp0_iter72_reg_reg was removed.  [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:2037]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-7129] Port addr[1] in module top_fifo_w32_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_AWREADY in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_ARREADY in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RVALID in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[255] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[254] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[253] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[252] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[251] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[250] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[249] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[248] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[247] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[246] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[245] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[244] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[243] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[242] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[241] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[240] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[239] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[238] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[237] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[236] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[235] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[234] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[233] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[232] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[231] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[230] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[229] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[228] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[227] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[226] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[225] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[224] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[223] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[222] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[221] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[220] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[219] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[218] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[217] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[216] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[215] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[214] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[213] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[212] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[211] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[210] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[209] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[208] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[207] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[206] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[205] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[204] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[203] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[202] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[201] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[200] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[199] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[198] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[197] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[196] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[195] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[194] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[193] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[192] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[191] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[190] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[189] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[188] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[187] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[186] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[185] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[184] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[183] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[182] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[181] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[180] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[179] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[178] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[177] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[176] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[175] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[174] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[173] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[172] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[171] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[170] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[169] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[168] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[167] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[166] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[165] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[164] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[163] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[162] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[161] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem_0_RDATA[160] in module top_write_task_Pipeline_VITIS_LOOP_54_1 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 3134.309 ; gain = 511.797 ; free physical = 96022 ; free virtual = 168119
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 3134.309 ; gain = 511.797 ; free physical = 96021 ; free virtual = 168119
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 3134.309 ; gain = 511.797 ; free physical = 96021 ; free virtual = 168119
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.21 . Memory (MB): peak = 3142.293 ; gain = 0.000 ; free physical = 96012 ; free virtual = 168110
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/top_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3267.770 ; gain = 0.000 ; free physical = 96106 ; free virtual = 168215
+Finished Parsing XDC File [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/top_ooc.xdc] for cell 'inst'
+Parsing XDC File [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3267.770 ; gain = 0.000 ; free physical = 96107 ; free virtual = 168216
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.71 ; elapsed = 00:00:00.35 . Memory (MB): peak = 3267.777 ; gain = 0.008 ; free physical = 96108 ; free virtual = 168217
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 3267.777 ; gain = 645.266 ; free physical = 95845 ; free virtual = 167963
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu48dr-ffvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 3275.781 ; gain = 653.270 ; free physical = 95845 ; free virtual = 167963
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 3275.781 ; gain = 653.270 ; free physical = 95845 ; free virtual = 167963
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'top_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'top_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_gmem_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_gmem_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_gmem_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_gmem_m_axi_reg_slice__parameterized2'
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter75_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1966]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter74_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1965]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter73_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1964]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter72_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1963]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter71_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1962]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter70_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1961]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter69_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1959]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter68_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1958]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter67_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1957]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter66_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1956]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter65_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1955]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter64_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1954]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter63_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1953]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter62_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1952]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter61_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1951]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter60_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1950]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter59_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1948]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter58_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1947]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter57_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1946]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter56_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1945]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter55_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1944]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter54_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1943]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter53_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1942]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter52_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1941]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter51_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1940]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter50_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1939]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter49_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1937]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter48_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1936]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter47_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1935]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter46_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1934]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter45_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1933]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter44_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1932]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter43_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1931]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter42_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1930]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter41_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1929]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter40_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1928]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter39_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1926]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter38_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1925]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter37_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1924]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter36_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1923]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter35_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1922]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter34_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1921]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter33_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1920]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter32_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1919]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter31_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1918]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter30_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1917]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter29_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1915]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter28_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1914]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter27_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1913]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter26_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1912]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter25_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1911]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter24_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1910]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter23_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1909]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter22_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1908]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter21_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1907]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter20_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1906]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter19_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1905]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter18_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1904]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter17_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1903]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter16_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1902]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter15_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1901]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter14_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1900]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter13_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1899]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter12_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1898]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter11_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1897]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter10_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1896]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter9_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1896]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter8_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1968]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter7_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1967]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter6_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1960]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter5_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1949]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter4_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1938]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter3_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1927]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter2_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:1916]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_pp0_iter1_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:2053]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_reg_575_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_read_task.v:2052]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln12_reg_736_pp0_iter3_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_fir.v:535]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln12_reg_736_pp0_iter2_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_fir.v:534]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln12_reg_736_pp0_iter1_reg_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_fir.v:517]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln12_reg_736_reg' and it is trimmed from '31' to '10' bits. [/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/968d/hdl/verilog/top_fir.v:516]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-3971] The signal "top_input_r_RAM_AUTO_1R1W_memcore:/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "top_output_r_RAM_AUTO_1R1W_memcore:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'top_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'top_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_gmem_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_gmem_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_gmem_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_gmem_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 3275.789 ; gain = 653.277 ; free physical = 95766 ; free virtual = 167881
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/read_task_U0/fpext_32ns_64_2_no_dsp_1_U3/top_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'inst/read_task_U0/fpext_32ns_64_2_no_dsp_1_U3/top_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/read_task_U0/fpext_32ns_64_2_no_dsp_1_U3/top_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'inst/read_task_U0/fpext_32ns_64_2_no_dsp_1_U3/top_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/read_task_U0/fpext_32ns_64_2_no_dsp_1_U3/top_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'inst/read_task_U0/fpext_32ns_64_2_no_dsp_1_U3/top_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6014] Unused sequential element top_input_r_RAM_AUTO_1R1W_memcore_U/ram_reg was removed. 
+INFO: [Synth 8-7124] RAM ("inst/input_r_U/top_input_r_RAM_AUTO_1R1W_memcore_U/ram_reg") is implemented using BRAM instead of URAM. Memory would be severely underutilized if URAMs are used
+WARNING: [Synth 8-6014] Unused sequential element top_output_r_RAM_AUTO_1R1W_memcore_U/ram_reg was removed. 
+INFO: [Synth 8-7124] RAM ("inst/output_r_U/top_output_r_RAM_AUTO_1R1W_memcore_U/ram_reg") is implemented using BRAM instead of URAM. Memory would be severely underutilized if URAMs are used
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module top_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module top_control_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 3275.789 ; gain = 653.277 ; free physical = 95944 ; free virtual = 168074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:01:04 . Memory (MB): peak = 3686.012 ; gain = 1063.500 ; free physical = 95512 ; free virtual = 167668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5556] The block RAM "inst/output_r_U/top_output_r_RAM_AUTO_1R1W_memcore_U/ram_reg" may be mapped as a cascade chain, because it is not timing critical.
+INFO: [Synth 8-7124] RAM ("inst/output_r_U/top_output_r_RAM_AUTO_1R1W_memcore_U/ram_reg") is implemented using BRAM instead of URAM. Memory would be severely underutilized if URAMs are used
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:06 . Memory (MB): peak = 3715.027 ; gain = 1092.516 ; free physical = 95343 ; free virtual = 167511
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/input_r_U/top_input_r_RAM_AUTO_1R1W_memcore_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/output_r_U/top_output_r_RAM_AUTO_1R1W_memcore_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/output_r_U/top_output_r_RAM_AUTO_1R1W_memcore_U/ram_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:01:10 . Memory (MB): peak = 3754.066 ; gain = 1131.555 ; free physical = 95206 ; free virtual = 167374
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:14 . Memory (MB): peak = 3873.879 ; gain = 1251.367 ; free physical = 95047 ; free virtual = 167195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:14 . Memory (MB): peak = 3873.879 ; gain = 1251.367 ; free physical = 95044 ; free virtual = 167192
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:15 . Memory (MB): peak = 3873.879 ; gain = 1251.367 ; free physical = 95038 ; free virtual = 167186
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:15 . Memory (MB): peak = 3873.879 ; gain = 1251.367 ; free physical = 95030 ; free virtual = 167178
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:15 . Memory (MB): peak = 3873.879 ; gain = 1251.367 ; free physical = 94990 ; free virtual = 167138
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:15 . Memory (MB): peak = 3873.879 ; gain = 1251.367 ; free physical = 94982 ; free virtual = 167130
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |   275|
+|2     |LUT1     |   253|
+|3     |LUT2     |   885|
+|4     |LUT3     |  1562|
+|5     |LUT4     |  1108|
+|6     |LUT5     |   542|
+|7     |LUT6     |   656|
+|8     |MUXCY    |     4|
+|9     |MUXF7    |   176|
+|10    |RAMB18E2 |     1|
+|11    |RAMB36E2 |    10|
+|16    |SRL16E   |   433|
+|17    |SRLC32E  |   654|
+|18    |FDRE     |  4774|
+|19    |FDSE     |    11|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:15 . Memory (MB): peak = 3873.879 ; gain = 1251.367 ; free physical = 94978 ; free virtual = 167126
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 490 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:01:05 . Memory (MB): peak = 3873.879 ; gain = 1117.898 ; free physical = 94919 ; free virtual = 167066
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:15 . Memory (MB): peak = 3873.879 ; gain = 1251.367 ; free physical = 94916 ; free virtual = 167064
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 3873.879 ; gain = 0.000 ; free physical = 94855 ; free virtual = 167003
+INFO: [Netlist 29-17] Analyzing 455 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3883.527 ; gain = 0.000 ; free physical = 94581 ; free virtual = 166745
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  (CARRY4) => CARRY8: 1 instance 
+
+Synth Design complete | Checksum: ea59b933
+INFO: [Common 17-83] Releasing license: Synthesis
+167 Infos, 190 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:37 . Memory (MB): peak = 3883.527 ; gain = 2180.352 ; free physical = 94568 ; free virtual = 166743
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2886.733; main = 2808.051; forked = 226.987
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4990.926; main = 3883.531; forked = 1236.855
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3907.539 ; gain = 0.000 ; free physical = 94685 ; free virtual = 166860
+INFO: [Common 17-1381] The checkpoint '/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = d8f89c92e71d4d2f
+INFO: [Coretcl 2-1174] Renamed 73 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3907.555 ; gain = 0.000 ; free physical = 94597 ; free virtual = 166785
+INFO: [Common 17-1381] The checkpoint '/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 23 14:56:32 2025...

@@ -1,0 +1,1454 @@
+parallelismSelector::VERBO: Summary of inputs: 
+parallelismSelector::VERBO: Output directory: "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/output"
+parallelismSelector::VERBO: spec:0:0: info: Will use basepath at location /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1
+parallelismSelector::VERBO: FPGA clock frequency is set to 200 MHz
+parallelismSelector::VERBO: Will use user-driven complete partitioning settings
+parallelismSelector::VERBO: Arrays with less than or equal to 4 elements that appear in the codegen directives will be completely partitioned
+parallelismSelector::VERBO: spec:0:0: info: Will use IR Module file at location /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/instrument/app_0/annotated.bc
+parallelismSelector::VERBO: FPGA frequency: 200000000 Hz
+parallelismSelector::VERBO: Using FPGA frequency for HLS estimations: 200000000 Hz
+parallelismSelector::VERBO: [Model Builder] Extracting logic model object from: /ecel/apps/xilinx24/Vitis/2024.2/vcxx/data/platform/logic/zynquplusRFSOC.logic
+parallelismSelector::VERBO: Device characteristics: Area -- (LUTs: 425280, FFs: 850560, DSPs: 4272, BRAMs: 2160, URAMs: 80)
+parallelismSelector::VERBO: Maximum area for the hardware functions: AreaConstraint -- (LUTs: 425280, FFs: 850560, DSPs: 4272, BRAMs: 2160, URAMs: 80)
+parallelismSelector::VERBO: Code Analyzer Id: 0
+parallelismSelector::VERBO: Dataflow Hardware Function: _Z3topPfS_i
+parallelismSelector::VERBO: Adding outline as primary transformation
+parallelismSelector::VERBO: RecipeFile: "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/csim/code_analyzer/.internal/dataflow/0/recipe.json"
+parallelismSelector::VERBO: Applying transformation: (region_outline)
+parallelismSelector::VERBO: Applying transformation: (outline)
+parallelismSelector::VERBO: Alias Equivalence: (Var <- { Pointees })
+                              1556 <- {1556}
+                              1557 <- {1557}
+                              1558 <- {1558}
+                              1561 <- {1556, 1590}
+                              1562 <- {1559, 1589}
+                              1570 <- {1559, 1592}
+                              1571 <- {1560, 1593}
+                              1586 <- {1560, 1595}
+                              1587 <- {1557, 1596}
+                              1589 <- {1559}
+                              1590 <- {1556}
+                              1592 <- {1559}
+                              1593 <- {1560}
+                              1595 <- {1560}
+                              1596 <- {1557}
+                            
+parallelismSelector::VERBO: Distributing pragmas of Var:1573
+parallelismSelector::VERBO: Var:1573 receives VariablePartitionReshapePragma PragmaType=ARRAY_PARTITION Type=complete Dimension=1 Function=693
+parallelismSelector::VERBO: No optimization objective set
+parallelismSelector::VERBO: Variable Infos:
+parallelismSelector::VERBO:     'a' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:5:0 VariableId 9
+                                  ElementBitsize=17
+                                  IsHlsStream=no
+                                  FunctionId=--
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=no
+                                  Elements=[ 10 ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'in' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:62:0 VariableId 1556
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 691
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'out' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:62:0 VariableId 1557
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 691
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'N' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:62:0 VariableId 1558
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 691
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[ ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'input' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:68:0 VariableId 1559
+                                  ElementBitsize=17
+                                  IsHlsStream=no
+                                  FunctionId= 691
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=no
+                                  Elements=[ 1000 ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'output' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:69:0 VariableId 1560
+                                  ElementBitsize=19
+                                  IsHlsStream=no
+                                  FunctionId= 691
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=no
+                                  Elements=[ 1000 ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'in' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:40:0 VariableId 1561
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 692
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'input' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:40:0 VariableId 1562
+                                  ElementBitsize=17
+                                  IsHlsStream=no
+                                  FunctionId= 692
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'N' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:40:0 VariableId 1563
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 692
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[ ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1565
+                                  ElementBitsize=64
+                                  IsHlsStream=no
+                                  FunctionId= 692
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'in' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:7:0 VariableId 1570
+                                  ElementBitsize=17
+                                  IsHlsStream=no
+                                  FunctionId= 693
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'out' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:7:0 VariableId 1571
+                                  ElementBitsize=19
+                                  IsHlsStream=no
+                                  FunctionId= 693
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'N' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:7:0 VariableId 1572
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 693
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[ ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'reg' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:9:0 VariableId 1573
+                                  ElementBitsize=17
+                                  IsHlsStream=no
+                                  FunctionId= 693
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=no
+                                  Elements=[ 10 ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1576
+                                  ElementBitsize=19
+                                  IsHlsStream=no
+                                  FunctionId= 693
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'output' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:51:0 VariableId 1586
+                                  ElementBitsize=19
+                                  IsHlsStream=no
+                                  FunctionId= 694
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'out' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:51:0 VariableId 1587
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 694
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'N' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:51:0 VariableId 1588
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 694
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[ ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'input' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:68:0 VariableId 1589
+                                  ElementBitsize=17
+                                  IsHlsStream=no
+                                  FunctionId= 695
+                                  IsArray=yes
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[--,  1000 ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'in' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:62:0 VariableId 1590
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 695
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'N' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:62:0 VariableId 1591
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 695
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[ ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'input' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:68:0 VariableId 1592
+                                  ElementBitsize=17
+                                  IsHlsStream=no
+                                  FunctionId= 696
+                                  IsArray=yes
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[--,  1000 ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'output' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:69:0 VariableId 1593
+                                  ElementBitsize=19
+                                  IsHlsStream=no
+                                  FunctionId= 696
+                                  IsArray=yes
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[--,  1000 ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'N' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:62:0 VariableId 1594
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 696
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[ ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'output' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:69:0 VariableId 1595
+                                  ElementBitsize=19
+                                  IsHlsStream=no
+                                  FunctionId= 697
+                                  IsArray=yes
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[--,  1000 ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'out' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:62:0 VariableId 1596
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 697
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'N' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:62:0 VariableId 1597
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 697
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[ ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO: Equivalence table
+                             Object with value: 9 is mapped to the object with value: 9
+                             Object with value: 1559 is mapped to the object with value: 1559
+                             Object with value: 1560 is mapped to the object with value: 1560
+                             Object with value: 1562 is mapped to the object with value: 1559
+                             Object with value: 1570 is mapped to the object with value: 1559
+                             Object with value: 1571 is mapped to the object with value: 1560
+                             Object with value: 1573 is mapped to the object with value: 1573
+                             Object with value: 1586 is mapped to the object with value: 1560
+                             Object with value: 1589 is mapped to the object with value: 1559
+                             Object with value: 1592 is mapped to the object with value: 1559
+                             Object with value: 1593 is mapped to the object with value: 1560
+                             Object with value: 1595 is mapped to the object with value: 1560
+                            
+parallelismSelector::VERBO: Nesting structure:
+                            +- Loop with id 25, Trip Count: (1<=Static, Dynamic Min/Avg/Max=1000/1000/1000 [x3]), Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:43:5, Vars=1559,1561,
+                            +- Loop with id 29, Trip Count: (Static=10, Dynamic [x3]), [Compiler Gen.], [No Insert Loc], Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:9:18, Vars=1573,
+                            +- Loop with id 26, Label=sample_loop, Trip Count: (1<=Static, Dynamic Min/Avg/Max=1000/1000/1000 [x3]), [RAW], Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:12:16, Vars=1559,1560,1573,
+                               +- Loop with id 27, Label=shift_loop, Trip Count: (Static=9, Dynamic [x3000]), Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:14:17, Vars=1573,
+                               +- Loop with id 28, Label=fir_loop, Trip Count: (Static=10, Dynamic [x3000]), [RAW], Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:25:15, Vars=9,1573,
+                            +- Loop with id 30, Trip Count: (1<=Static, Dynamic Min/Avg/Max=1000/1000/1000 [x3]), Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:54:5, Vars=1560,1587,
+                            
+parallelismSelector::VERBO: Nesting structure after dynamic trip count update:
+                            +- Loop with id 25, Trip Count: (1<=Static, Dynamic Min/Avg/Max=1000/1000/1000 [x3], TripCount pragma Min/Avg/Max=0/500/1000), Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:43:5, Vars=1559,1561,
+                            +- Loop with id 29, Trip Count: (Static=10, Dynamic [x3]), [Compiler Gen.], [No Insert Loc], Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:9:18, Vars=1573,
+                            +- Loop with id 26, Label=sample_loop, Trip Count: (1<=Static, Dynamic Min/Avg/Max=1000/1000/1000 [x3], TripCount pragma Min/Avg/Max=0/500/1000), [RAW], Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:12:16, Vars=1559,1560,1573,
+                               +- Loop with id 27, Label=shift_loop, Trip Count: (Static=9, Dynamic [x3000]), Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:14:17, Vars=1573,
+                               +- Loop with id 28, Label=fir_loop, Trip Count: (Static=10, Dynamic [x3000]), [RAW], Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:25:15, Vars=9,1573,
+                            +- Loop with id 30, Trip Count: (1<=Static, Dynamic Min/Avg/Max=1000/1000/1000 [x3], TripCount pragma Min/Avg/Max=0/500/1000), Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:54:5, Vars=1560,1587,
+                            
+parallelismSelector::VERBO: Function 'top' not inlined as per top-levels
+parallelismSelector::VERBO: Function 'Outline_T3_F691_R2_Call' not inlined as per dataflow task
+parallelismSelector::VERBO: Function 'Outline_T4_F691_R3_Call' not inlined as per dataflow task
+parallelismSelector::VERBO: Function 'Outline_T5_F691_R4_Call' not inlined as per dataflow task
+parallelismSelector::VERBO: Function 'read_task' inlined as per Vitis C++ heuristic
+parallelismSelector::VERBO: Function 'fir' inlined as per Vitis C++ heuristic
+parallelismSelector::VERBO: Function 'write_task' inlined as per Vitis C++ heuristic
+parallelismSelector::VERBO: Nesting structure after static trip count upper bound calculation for symbolically bounded loops:
+                            +- Loop with id 25, Trip Count: (1<=Static, Dynamic Min/Avg/Max=1000/1000/1000 [x3], TripCount pragma Min/Avg/Max=0/500/1000), Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:43:5, Vars=1559,1561,
+                            +- Loop with id 29, Trip Count: (Static=10, Dynamic [x3]), [Compiler Gen.], [No Insert Loc], Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:9:18, Vars=1573,
+                            +- Loop with id 26, Label=sample_loop, Trip Count: (1<=Static, Dynamic Min/Avg/Max=1000/1000/1000 [x3], TripCount pragma Min/Avg/Max=0/500/1000), [RAW], Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:12:16, Vars=1559,1560,1573,
+                               +- Loop with id 27, Label=shift_loop, Trip Count: (Static=9, Dynamic [x3000]), Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:14:17, Vars=1573,
+                               +- Loop with id 28, Label=fir_loop, Trip Count: (Static=10, Dynamic [x3000]), [RAW], Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:25:15, Vars=9,1573,
+                            +- Loop with id 30, Trip Count: (1<=Static, Dynamic Min/Avg/Max=1000/1000/1000 [x3], TripCount pragma Min/Avg/Max=0/500/1000), Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:54:5, Vars=1560,1587,
+                            
+parallelismSelector::VERBO: 
+                            The following user pragmas were detected in the application:
+parallelismSelector::VERBO: /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:70:5: warning: User pragma 'function dataflow' found in function top
+parallelismSelector::VERBO: /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:45:5: warning: User pragma 'loop_tripcount' found in function read_task
+parallelismSelector::VERBO: /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:13:1: warning: User pragma 'loop_tripcount' found in function fir
+parallelismSelector::VERBO: /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:56:5: warning: User pragma 'loop_tripcount' found in function write_task
+parallelismSelector::VERBO: /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:10:1: warning: User pragma 'array_partition' found in function fir
+parallelismSelector::VERBO: Max iterations for loop 27 are 9
+parallelismSelector::VERBO:  - loop 27 is "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp":14:17
+parallelismSelector::VERBO: Max iterations for loop 28 are 10
+parallelismSelector::VERBO:  - loop 28 is "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp":25:15
+parallelismSelector::VERBO: Partitioning variable 'a' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:5:0 VariableId 9
+parallelismSelector::VERBO: Partitioning variable 'input' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:68:0 VariableId 1559
+parallelismSelector::VERBO: Partitioning variable 'output' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:69:0 VariableId 1560
+parallelismSelector::VERBO: Partitioning variable 'reg' /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:9:0 VariableId 1573
+parallelismSelector::VERBO: Initial branch:
+                            FunctionPipelineTopLevel: Maybe
+                            Partition {dim 0: cyclic 1, 2, 5 complete} (VariableName a) (VariableId 9)
+                            Partition {dim 0: cyclic 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500 complete} (VariableName input) (VariableId 1559)
+                            Partition {dim 0: cyclic 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500 complete} (VariableName output) (VariableId 1560)
+                            Partition {dim 0: cyclic 1, 2, 5 complete} (VariableName reg) (VariableId 1573)
+                            +- pipeline, unroll with factors 1 (LoopId 25)
+                            +- unroll with factors 1, 10 (LoopId 29)
+                            +- pipeline, unroll with factors 1 (Label sample_loop) (LoopId 26)
+                               +- pipeline, unroll with factors 1, 3, 9, unroll/pipeline with factors 3 (Label shift_loop) (LoopId 27)
+                               +- pipeline, unroll with factors 1, 10 (Label fir_loop) (LoopId 28)
+                            +- pipeline, unroll with factors 1 (LoopId 30)
+                            
+parallelismSelector::VERBO: Function pipeline is not legal because there are dataflow regions in the program
+parallelismSelector::VERBO: Initial branch after first round of constraints:
+                            FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1, 2, 5 complete} (VariableName a) (VariableId 9)
+                            Partition {dim 0: cyclic 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500 complete} (VariableName input) (VariableId 1559)
+                            Partition {dim 0: cyclic 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500 complete} (VariableName output) (VariableId 1560)
+                            Partition {dim 0: cyclic 1, 2, 5 complete} (VariableName reg) (VariableId 1573)
+                            +- pipeline, unroll with factors 1 (LoopId 25)
+                            +- unroll with factors 1, 10 (LoopId 29)
+                            +- pipeline, unroll with factors 1 (Label sample_loop) (LoopId 26)
+                               +- pipeline, unroll with factors 1, 3, 9, unroll/pipeline with factors 3 (Label shift_loop) (LoopId 27)
+                               +- pipeline, unroll with factors 1, 10 (Label fir_loop) (LoopId 28)
+                            +- pipeline, unroll with factors 1 (LoopId 30)
+                            
+parallelismSelector::VERBO: Nesting structure after user pragma constraints:
+                            +- Loop with id 25, Trip Count: (1<=Static, Dynamic Min/Avg/Max=1000/1000/1000 [x3], TripCount pragma Min/Avg/Max=0/500/1000), Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:43:5, Vars=1559,1561,
+                            +- Loop with id 29, Trip Count: (Static=10, Dynamic [x3]), [Compiler Gen.], [No Insert Loc], Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:9:18, Vars=1573,
+                            +- Loop with id 26, Label=sample_loop, Trip Count: (1<=Static, Dynamic Min/Avg/Max=1000/1000/1000 [x3], TripCount pragma Min/Avg/Max=0/500/1000), [RAW], Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:12:16, Vars=1559,1560,1573,
+                               +- Loop with id 27, Label=shift_loop, Trip Count: (Static=9, Dynamic [x3000]), Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:14:17, Vars=1573,
+                               +- Loop with id 28, Label=fir_loop, Trip Count: (Static=10, Dynamic [x3000]), [RAW], Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:25:15, Vars=9,1573,
+                            +- Loop with id 30, Trip Count: (1<=Static, Dynamic Min/Avg/Max=1000/1000/1000 [x3], TripCount pragma Min/Avg/Max=0/500/1000), Loc=/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:54:5, Vars=1560,1587,
+                            
+parallelismSelector::VERBO: Initial branch after applying user pragma constraints:
+                            FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1, 2, 5 complete} (VariableName a) (VariableId 9)
+                            Partition {dim 0: cyclic 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500 complete} (VariableName input) (VariableId 1559)
+                            Partition {dim 0: cyclic 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500 complete} (VariableName output) (VariableId 1560)
+                            Partition {dim 0: complete} (VariableName reg) (VariableId 1573)
+                            +- pipeline, unroll with factors 1 (LoopId 25)
+                            +- unroll with factors 1, 10 (LoopId 29)
+                            +- pipeline, unroll with factors 1 (Label sample_loop) (LoopId 26)
+                               +- pipeline, unroll with factors 1, 3, 9, unroll/pipeline with factors 3 (Label shift_loop) (LoopId 27)
+                               +- pipeline, unroll with factors 1, 10 (Label fir_loop) (LoopId 28)
+                            +- pipeline, unroll with factors 1 (LoopId 30)
+                            
+parallelismSelector::VERBO: Initial branch after applying Xilinx constraints:
+                            FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1, 2, 5 complete} (VariableName a) (VariableId 9)
+                            Partition {dim 0: cyclic 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500 complete} (VariableName input) (VariableId 1559)
+                            Partition {dim 0: cyclic 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500 complete} (VariableName output) (VariableId 1560)
+                            Partition {dim 0: complete} (VariableName reg) (VariableId 1573)
+                            +- pipeline, unroll with factors 1 (LoopId 25)
+                            +- unroll with factors 1 (LoopId 29)
+                            +- pipeline, unroll with factors 1 (Label sample_loop) (LoopId 26)
+                               +- pipeline, unroll with factors 1, 3, 9, unroll/pipeline with factors 3 (Label shift_loop) (LoopId 27)
+                               +- pipeline, unroll with factors 1, 10 (Label fir_loop) (LoopId 28)
+                            +- pipeline, unroll with factors 1 (LoopId 30)
+                            
+parallelismSelector::VERBO: DataflowConstrainer: Constraining Func/Loop with Id 691
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1556
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1558
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1558
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1558
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1557
+parallelismSelector::VERBO: DataflowConstrainer: Not constrained: VarId=9
+parallelismSelector::VERBO: DataflowConstrainer: Not constrained: VarId=1559
+parallelismSelector::VERBO: DataflowConstrainer: Not constrained: VarId=1560
+parallelismSelector::VERBO: Initial branch after applying dataflow constraints:
+                            FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1, 2, 5 complete} (VariableName a) (VariableId 9)
+                            Partition {dim 0: cyclic 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500 complete} (VariableName input) (VariableId 1559)
+                            Partition {dim 0: cyclic 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500 complete} (VariableName output) (VariableId 1560)
+                            Partition {dim 0: complete} (VariableName reg) (VariableId 1573)
+                            +- pipeline, unroll with factors 1 (LoopId 25)
+                            +- unroll with factors 1 (LoopId 29)
+                            +- pipeline, unroll with factors 1 (Label sample_loop) (LoopId 26)
+                               +- pipeline, unroll with factors 1, 3, 9, unroll/pipeline with factors 3 (Label shift_loop) (LoopId 27)
+                               +- pipeline, unroll with factors 1, 10 (Label fir_loop) (LoopId 28)
+                            +- pipeline, unroll with factors 1 (LoopId 30)
+                            
+parallelismSelector::VERBO: Removing unroll factor 3 from loop 27 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing reshape options from the design space because optimizing reshape is disabled
+                            
+parallelismSelector::VERBO: Initial branch after applying heuristic constraints:
+                            FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1, 2, 5 complete} (VariableName a) (VariableId 9)
+                            Partition {dim 0: cyclic 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500 complete} (VariableName input) (VariableId 1559)
+                            Partition {dim 0: cyclic 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500 complete} (VariableName output) (VariableId 1560)
+                            Partition {dim 0: complete} (VariableName reg) (VariableId 1573)
+                            +- pipeline, unroll with factors 1 (LoopId 25)
+                            +- unroll with factors 1 (LoopId 29)
+                            +- pipeline, unroll with factors 1 (Label sample_loop) (LoopId 26)
+                               +- pipeline, unroll with factors 1, 9, unroll/pipeline with factors 3 (Label shift_loop) (LoopId 27)
+                               +- pipeline, unroll with factors 1, 10 (Label fir_loop) (LoopId 28)
+                            +- pipeline, unroll with factors 1 (LoopId 30)
+                            
+parallelismSelector::VERBO: Initial branch after applying second round of Xilinx constraints:
+                            FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1, 2, 5 complete} (VariableName a) (VariableId 9)
+                            Partition {dim 0: cyclic 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500 complete} (VariableName input) (VariableId 1559)
+                            Partition {dim 0: cyclic 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500 complete} (VariableName output) (VariableId 1560)
+                            Partition {dim 0: complete} (VariableName reg) (VariableId 1573)
+                            +- pipeline, unroll with factors 1 (LoopId 25)
+                            +- unroll with factors 1 (LoopId 29)
+                            +- pipeline, unroll with factors 1 (Label sample_loop) (LoopId 26)
+                               +- pipeline, unroll with factors 1, 9, unroll/pipeline with factors 3 (Label shift_loop) (LoopId 27)
+                               +- pipeline, unroll with factors 1, 10 (Label fir_loop) (LoopId 28)
+                            +- pipeline, unroll with factors 1 (LoopId 30)
+                            
+parallelismSelector::VERBO: Initial branch after performance pragma constraints:
+                            FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1} (VariableName a) (VariableId 9)
+                            Partition {dim 0: cyclic 1} (VariableName input) (VariableId 1559)
+                            Partition {dim 0: cyclic 1} (VariableName output) (VariableId 1560)
+                            Partition {dim 0: complete} (VariableName reg) (VariableId 1573)
+                            +- unroll with factors 1 (LoopId 25)
+                            +- unroll with factors 1 (LoopId 29)
+                            +- unroll with factors 1 (Label sample_loop) (LoopId 26)
+                               +- unroll with factors 1 (Label shift_loop) (LoopId 27)
+                               +- unroll with factors 1 (Label fir_loop) (LoopId 28)
+                            +- unroll with factors 1 (LoopId 30)
+                            
+parallelismSelector::VERBO: Initial branch after PerfEst evaluation constraints:
+                            FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1} (VariableName a) (VariableId 9)
+                            Partition {dim 0: cyclic 1} (VariableName input) (VariableId 1559)
+                            Partition {dim 0: cyclic 1} (VariableName output) (VariableId 1560)
+                            Partition {dim 0: complete} (VariableName reg) (VariableId 1573)
+                            +- unroll with factors 1 (LoopId 25)
+                            +- unroll with factors 1 (LoopId 29)
+                            +- unroll with factors 1 (Label sample_loop) (LoopId 26)
+                               +- unroll with factors 1 (Label shift_loop) (LoopId 27)
+                               +- unroll with factors 1 (Label fir_loop) (LoopId 28)
+                            +- unroll with factors 1 (LoopId 30)
+                            
+parallelismSelector::VERBO: Initial constrained branch:
+                            FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1} (VariableName a) (VariableId 9)
+                            Partition {dim 0: cyclic 1} (VariableName input) (VariableId 1559)
+                            Partition {dim 0: cyclic 1} (VariableName output) (VariableId 1560)
+                            Partition {dim 0: complete} (VariableName reg) (VariableId 1573)
+                            +- unroll with factors 1 (LoopId 25)
+                            +- unroll with factors 1 (LoopId 29)
+                            +- unroll with factors 1 (Label sample_loop) (LoopId 26)
+                               +- unroll with factors 1 (Label shift_loop) (LoopId 27)
+                               +- unroll with factors 1 (Label fir_loop) (LoopId 28)
+                            +- unroll with factors 1 (LoopId 30)
+                            
+parallelismSelector::VERBO: Modifier for induction variable for loop id: 29 in function _Z3firP8ap_fixedILi17ELi2EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi19ELi3ELS0_5ELS1_3ELi0EEi not found!
+parallelismSelector::VERBO: fir.cpp:25:39: warning: Call to external function 'llvm.directive.scope.entry' cannot be estimated
+                            
+parallelismSelector::VERBO: fir.cpp:25:39: warning: Call to external function 'llvm.directive.scope.entry' cannot be estimated
+                            
+parallelismSelector::VERBO: fir.cpp:58:18: warning: Call to external function 'llvm.ctlz.i19' cannot be estimated
+                            
+parallelismSelector::VERBO: HPE - Calculating latency and area for design space...
+                            Setting Space: FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1} (VariableId 9)
+                            Partition {dim 0: cyclic 1} (VariableId 1559)
+                            Partition {dim 0: cyclic 1} (VariableId 1560)
+                            Partition {dim 0: complete} (VariableId 1573)
+                            +- unroll with factors 1 (LoopId 25)
+                            +- unroll with factors 1 (LoopId 29)
+                            +- unroll with factors 1 (Label sample_loop) (LoopId 26)
+                               +- unroll with factors 1 (Label shift_loop) (LoopId 27)
+                               +- unroll with factors 1 (Label fir_loop) (LoopId 28)
+                            +- unroll with factors 1 (LoopId 30)
+                            
+parallelismSelector::VERBO: Calculating latency for top level hw function: top
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(286 F=695) (1589->1559)(1590->1556)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1589 is mapped to the object with value: 1559
+                             Object with value: 1590 is mapped to the object with value: 1556
+                            
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(289 F=692) (1561->1590)(1562->1589)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1561 is mapped to the object with value: 1556
+                             Object with value: 1562 is mapped to the object with value: 1559
+                             Object with value: 1589 is mapped to the object with value: 1559
+                             Object with value: 1590 is mapped to the object with value: 1556
+                            
+parallelismSelector::VERBO: Analyzing Loop "for.body" (LoopId 25):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 25
+parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: if.then.i.i.i.i.i -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: if.end.i.i.i.i.i -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: if.then31.i.i.i.i.i -> {1: 4}
+parallelismSelector::VERBO:          - EndCycles: if.else.i.i.i.i.i -> {1: 4}
+parallelismSelector::VERBO:          - EndCycles: _ZN8ap_fixedILi17ELi2EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ef.86.exit -> {1: 8}
+parallelismSelector::VERBO:          - EndCycles: if.then40.i.i.i.i.i -> {1: 5}
+parallelismSelector::VERBO:          - EndCycles: if.else44.i.i.i.i.i -> {1: 5}
+parallelismSelector::VERBO:          - EndCycles: if.then46.i.i.i.i.i -> {1: 6}
+parallelismSelector::VERBO:          - EndCycles: if.then48.i.i.i.i.i -> {1: 7}
+parallelismSelector::VERBO:          - EndCycles: if.else52.i.i.i.i.i -> {1: 7}
+parallelismSelector::VERBO:          - EndCycles: if.else57.i.i.i.i.i -> {1: 6}
+parallelismSelector::VERBO:          - EndCycles: if.then62.i.i.i.i.i -> {1: 7}
+parallelismSelector::VERBO:          - EndCycles: if.else66.i.i.i.i.i -> {1: 7}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 8}
+parallelismSelector::VERBO:        - Critical path: for.body, if.then.i.i.i.i.i, if.end.i.i.i.i.i, if.else.i.i.i.i.i, _ZN8ap_fixedILi17ELi2EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ef.86.exit, if.else44.i.i.i.i.i, if.then46.i.i.i.i.i, if.then48.i.i.i.i.i, if.else52.i.i.i.i.i, if.else57.i.i.i.i.i, if.then62.i.i.i.i.i, if.else66.i.i.i.i.i
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 1}, OwnedIIMem: {1: 1}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "read_task" (FunctionId 692):
+parallelismSelector::VERBO:         LoopId: 25, TC: 1000, IL: {1: 8}, IIMem: {1: 1}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 8000
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 25): 8000
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: _Z9read_taskPfP8ap_fixedILi17ELi2EL9ap_q_mode5EL9ap_o_mode3ELi0EEi
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: cond.true -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: cond.false -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: for.body.lr.ph -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: _ZN8ap_fixedILi17ELi2EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ef.86.exit -> {1: 8003}
+parallelismSelector::VERBO:          - EndCycles: for.cond.for.end_crit_edge -> {1: 8004}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 8004}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 8004}
+parallelismSelector::VERBO:        - Critical path: entry, cond.true, for.body.lr.ph, for.body, _ZN8ap_fixedILi17ELi2EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ef.86.exit, for.cond.for.end_crit_edge, for.end
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T3_F691_R2_Call" (FunctionId 695):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T3_F691_R2_Call
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 8005}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 8005}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot_iso0, newFuncRoot
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(287 F=696) (1592->1559)(1593->1560)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1592 is mapped to the object with value: 1559
+                             Object with value: 1593 is mapped to the object with value: 1560
+                            
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(290 F=693) (1570->1592)(1571->1593)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1570 is mapped to the object with value: 1559
+                             Object with value: 1571 is mapped to the object with value: 1560
+                             Object with value: 1592 is mapped to the object with value: 1559
+                             Object with value: 1593 is mapped to the object with value: 1560
+                            
+parallelismSelector::VERBO: Analyzing Loop "shift_loop" (LoopId 27):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 27 Label: shift_loop
+parallelismSelector::VERBO:          - EndCycles: for.body4 -> {1: 2}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 2}
+parallelismSelector::VERBO:        - Critical path: for.body4
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 0}, OwnedIIMem: {1: 0}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Loop "fir_loop" (LoopId 28):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 28 Label: fir_loop
+parallelismSelector::VERBO:          - EndCycles: for.body13 -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: if.then.i.i.i.i.i -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: if.end.i.i.i.i.i -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: if.then.i.i -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: _ZN13ap_fixed_baseILi19ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEpLILi34ELi4ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.67.exit -> {1: 4}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 4}
+parallelismSelector::VERBO:        - Critical path: for.body13, if.then.i.i.i.i.i, if.end.i.i.i.i.i, if.then.i.i, _ZN13ap_fixed_baseILi19ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEpLILi34ELi4ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.67.exit
+parallelismSelector::VERBO:     hasRAW: 1
+parallelismSelector::VERBO:     Recurrence: Circuit=7:12 -> 9:1 -> 9:2 -> 9:4 -> 11:0 -> 11:1 -> 11:3 -> 7:12
+parallelismSelector::VERBO:       distance=3
+parallelismSelector::VERBO:        - IIMem: {1: 0.5}, OwnedIIMem: {1: 0.5}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Loop "sample_loop" (LoopId 26):
+parallelismSelector::VERBO:         LoopId: 27, Label: shift_loop, TC: 9, IL: {1: 2}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 18
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 27): 18
+parallelismSelector::VERBO:         LoopId: 28, Label: fir_loop, TC: 10, IL: {1: 4}, IIMem: {1: 0.5}, IIDep 3
+parallelismSelector::VERBO:         	unroll 1 Cycles: 40
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 28): 40
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 26 Label: sample_loop
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 19}
+parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: for.body4 -> {1: 18}
+parallelismSelector::VERBO:          - EndCycles: _ZN13ap_fixed_baseILi19ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEpLILi34ELi4ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.67.exit -> {1: 59}
+parallelismSelector::VERBO:          - EndCycles: for.end19 -> {1: 60}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 60}
+parallelismSelector::VERBO:        - Critical path: for.end, for.body, for.body4, for.body13, _ZN13ap_fixed_baseILi19ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEpLILi34ELi4ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.67.exit, for.end19
+parallelismSelector::VERBO:     hasRAW: 1
+parallelismSelector::VERBO:     Recurrence: Circuit=5:7 -> 5:8 -> 5:7
+parallelismSelector::VERBO:       distance=2
+parallelismSelector::VERBO:     Recurrence: Circuit=7:7 -> 7:8 -> 7:11 -> 7:12 -> 9:1 -> 9:2 -> 9:3 -> 9:4 -> 11:0 -> 11:1 -> 11:3 -> 12:0 -> 12:3 -> 7:7
+parallelismSelector::VERBO:       distance=6
+parallelismSelector::VERBO:        - IIMem: {1: 1}, OwnedIIMem: {1: 1}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Loop "arrayinit.body" (LoopId 29):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 29
+parallelismSelector::VERBO:          - EndCycles: arrayinit.body -> {1: 1}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 1}
+parallelismSelector::VERBO:        - Critical path: arrayinit.body
+parallelismSelector::VERBO:     hasRAW: 1
+parallelismSelector::VERBO:     Recurrence: Circuit=1:0 -> 1:3 -> 1:0
+parallelismSelector::VERBO:       distance=1
+parallelismSelector::VERBO:        - IIMem: {1: 0}, OwnedIIMem: {1: 0}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "fir" (FunctionId 693):
+parallelismSelector::VERBO:         LoopId: 29, TC: 10, IL: {1: 1}, IIMem: {1: 0}, IIDep 1
+parallelismSelector::VERBO:         	unroll 1 Cycles: 10
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 29): 10
+parallelismSelector::VERBO:         LoopId: 26, Label: sample_loop, TC: 1000, IL: {1: 60}, IIMem: {1: 1}, IIDep 6
+parallelismSelector::VERBO:         	unroll 1 Cycles: 60000
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 26): 60000
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: _Z3firP8ap_fixedILi17ELi2EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi19ELi3ELS0_5ELS1_3ELi0EEi
+parallelismSelector::VERBO:          - EndCycles: arrayinit.end1 -> {1: 12}
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: arrayinit.body -> {1: 11}
+parallelismSelector::VERBO:          - EndCycles: for.body.lr.ph -> {1: 13}
+parallelismSelector::VERBO:          - EndCycles: for.end19 -> {1: 60013}
+parallelismSelector::VERBO:          - EndCycles: for.cond.for.end24_crit_edge -> {1: 60014}
+parallelismSelector::VERBO:          - EndCycles: for.end24 -> {1: 60014}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 60014}
+parallelismSelector::VERBO:        - Critical path: arrayinit.end1, entry, for.body, arrayinit.body, for.body.lr.ph, for.end19, for.cond.for.end24_crit_edge, for.end24
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T4_F691_R3_Call" (FunctionId 696):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T4_F691_R3_Call
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 60015}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 60015}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot, newFuncRoot_iso0
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(288 F=697) (1595->1560)(1596->1557)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1595 is mapped to the object with value: 1560
+                             Object with value: 1596 is mapped to the object with value: 1557
+                            
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(291 F=694) (1586->1595)(1587->1596)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1586 is mapped to the object with value: 1560
+                             Object with value: 1587 is mapped to the object with value: 1557
+                             Object with value: 1595 is mapped to the object with value: 1560
+                             Object with value: 1596 is mapped to the object with value: 1557
+                            
+parallelismSelector::VERBO: Analyzing Loop "for.body" (LoopId 30):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 30
+parallelismSelector::VERBO:          - EndCycles: if.end.i.i -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: if.then4.i.i -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: if.else.i.i -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: _ZNK13ap_fixed_baseILi19ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEcvfEv.61.exit -> {1: 6}
+parallelismSelector::VERBO:          - EndCycles: if.end9.i.i -> {1: 5}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 6}
+parallelismSelector::VERBO:        - Critical path: if.end.i.i, for.body, if.else.i.i, _ZNK13ap_fixed_baseILi19ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEcvfEv.61.exit, if.end9.i.i
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 1}, OwnedIIMem: {1: 1}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "write_task" (FunctionId 694):
+parallelismSelector::VERBO:         LoopId: 30, TC: 1000, IL: {1: 6}, IIMem: {1: 1}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 6000
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 30): 6000
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: _Z10write_taskP8ap_fixedILi19ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPfi
+parallelismSelector::VERBO:          - EndCycles: for.cond.for.end_crit_edge -> {1: 6004}
+parallelismSelector::VERBO:          - EndCycles: cond.true -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 6004}
+parallelismSelector::VERBO:          - EndCycles: _ZNK13ap_fixed_baseILi19ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEcvfEv.61.exit -> {1: 6003}
+parallelismSelector::VERBO:          - EndCycles: for.body.lr.ph -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: cond.false -> {1: 2}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 6004}
+parallelismSelector::VERBO:        - Critical path: for.body, for.cond.for.end_crit_edge, cond.true, for.end, _ZNK13ap_fixed_baseILi19ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEcvfEv.61.exit, for.body.lr.ph, entry
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T5_F691_R4_Call" (FunctionId 697):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T5_F691_R4_Call
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 6005}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 6005}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot, newFuncRoot_iso0
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "top" (FunctionId 691):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: _Z3topPfS_i
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 8007}
+parallelismSelector::VERBO:          - EndCycles: codeRepl1 -> {1: 68023}
+parallelismSelector::VERBO:          - EndCycles: codeRepl2 -> {1: 74029}
+parallelismSelector::VERBO:          - EndCycles: entry_iso3 -> {1: 74029}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 74029}
+parallelismSelector::VERBO:        - Critical path: entry, codeRepl, codeRepl1, codeRepl2, entry_iso3
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Filling in latencies and intervals per loop...
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 25, TC: 1000, IL: {1: 8}, IIMem: {1: 1}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 8
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 25, TC: 1000, IL: {1: 8}, IIMem: {1: 1}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 8000
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 27, Label: shift_loop, TC: 9, IL: {1: 2}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 2
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 27, Label: shift_loop, TC: 9, IL: {1: 2}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 18
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 28, Label: fir_loop, TC: 10, IL: {1: 4}, IIMem: {1: 0.5}, IIDep 3
+parallelismSelector::VERBO:     	unroll 1 Cycles: 4
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 28, Label: fir_loop, TC: 10, IL: {1: 4}, IIMem: {1: 0.5}, IIDep 3
+parallelismSelector::VERBO:     	unroll 1 Cycles: 40
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 26, Label: sample_loop, TC: 1000, IL: {1: 60}, IIMem: {1: 1}, IIDep 6
+parallelismSelector::VERBO:     	unroll 1 Cycles: 60
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 26, Label: sample_loop, TC: 1000, IL: {1: 60}, IIMem: {1: 1}, IIDep 6
+parallelismSelector::VERBO:     	unroll 1 Cycles: 60000
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 29, TC: 10, IL: {1: 1}, IIMem: {1: 0}, IIDep 1
+parallelismSelector::VERBO:     	unroll 1 Cycles: 1
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 29, TC: 10, IL: {1: 1}, IIMem: {1: 0}, IIDep 1
+parallelismSelector::VERBO:     	unroll 1 Cycles: 10
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 30, TC: 1000, IL: {1: 6}, IIMem: {1: 1}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 6
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 30, TC: 1000, IL: {1: 6}, IIMem: {1: 1}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 6000
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: _Z3topPfS_i : 691
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(286 F=695) (1589->1559)(1590->1556)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1589 is mapped to the object with value: 1559
+                             Object with value: 1590 is mapped to the object with value: 1556
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T3_F691_R2_Call : 695
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(289 F=692) (1561->1590)(1562->1589)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1561 is mapped to the object with value: 1556
+                             Object with value: 1562 is mapped to the object with value: 1559
+                             Object with value: 1589 is mapped to the object with value: 1559
+                             Object with value: 1590 is mapped to the object with value: 1556
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: _Z9read_taskPfP8ap_fixedILi17ELi2EL9ap_q_mode5EL9ap_o_mode3ELi0EEi : 692
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 25
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 14 FFs: 2 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {25: 1}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 14 FFs: 2 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 14 FFs: 2 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 542 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 14 FFs: 2 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 490 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 14 FFs: 2 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 582 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 40 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 14 FFs: 2 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 14 FFs: 2 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 582 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 14 FFs: 2 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 582 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(287 F=696) (1592->1559)(1593->1560)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1592 is mapped to the object with value: 1559
+                             Object with value: 1593 is mapped to the object with value: 1560
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T4_F691_R3_Call : 696
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(290 F=693) (1570->1592)(1571->1593)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1570 is mapped to the object with value: 1559
+                             Object with value: 1571 is mapped to the object with value: 1560
+                             Object with value: 1592 is mapped to the object with value: 1559
+                             Object with value: 1593 is mapped to the object with value: 1560
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: _Z3firP8ap_fixedILi17ELi2EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi19ELi3ELS0_5ELS1_3ELi0EEi : 693
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 26
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 27
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {27: 1}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 122 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 20 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 28
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {28: 1}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 174 FFs: 11 DSPs: 2 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 95 FFs: 11 DSPs: 2 BRAMs: 0
+parallelismSelector::VERBO: [visitNestedHeader] Adding nested shareable area from loop(id) 27 LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [visitNestedHeader] Adding nested shareable area from loop(id) 28 LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {26: 1}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 372 FFs: 11 DSPs: 2 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 20 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 29
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {29: 1}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 80 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 29 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 472 FFs: 11 DSPs: 2 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 20 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 472 FFs: 11 DSPs: 2 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 472 FFs: 11 DSPs: 2 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(288 F=697) (1595->1560)(1596->1557)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1595 is mapped to the object with value: 1560
+                             Object with value: 1596 is mapped to the object with value: 1557
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T5_F691_R4_Call : 697
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(291 F=694) (1586->1595)(1587->1596)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1586 is mapped to the object with value: 1560
+                             Object with value: 1587 is mapped to the object with value: 1557
+                             Object with value: 1595 is mapped to the object with value: 1560
+                             Object with value: 1596 is mapped to the object with value: 1557
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: _Z10write_taskP8ap_fixedILi19ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPfi : 694
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 30
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {30: 1}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 700 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 648 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 740 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 40 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 740 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 740 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: Calculate statically allocated area for variable ID 9
+parallelismSelector::VERBO:     Array bits: 170. Elements: 10. Element bits: 17
+parallelismSelector::VERBO:     No BRAM with complete partitioning. Allocate 40 LUTs and 170 FFs
+parallelismSelector::VERBO: Calculate statically allocated area for variable ID 1559
+parallelismSelector::VERBO:     Array bits: 17000. Elements: 1000. Element bits: 17
+parallelismSelector::VERBO:     Estimate statically allocated area assuming the BRAM resource type
+parallelismSelector::VERBO:         Would allocate 1 BRAMs according to the partition factor
+parallelismSelector::VERBO: Calculate statically allocated area for variable ID 1560
+parallelismSelector::VERBO:     Array bits: 19000. Elements: 1000. Element bits: 19
+parallelismSelector::VERBO:     Estimate statically allocated area assuming the BRAM resource type
+parallelismSelector::VERBO:         Would allocate 2 BRAMs according to the partition factor
+parallelismSelector::VERBO: Calculate statically allocated area for variable ID 1573
+parallelismSelector::VERBO:     Array bits: 170. Elements: 10. Element bits: 17
+parallelismSelector::VERBO:     No BRAM with complete partitioning. Allocate 40 LUTs and 170 FFs
+parallelismSelector::VERBO: Is valid space because UsedArea.Max <= GlobalConstr.AreaConstr
+parallelismSelector::VERBO: Initial constrained branch with estimates:
+                            FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1} (VariableId 9)
+                               +- Penalty on LoopId 26: {1: lat/intv 0} (unroll: latency/interval)
+                               +- Penalty on LoopId 28: {1: lat/intv 0} (unroll: latency/interval)
+                            Partition {dim 0: cyclic 1} (VariableId 1559)
+                               +- Penalty on LoopId 25: {1: lat/intv 0} (unroll: latency/interval)
+                            Partition {dim 0: cyclic 1} (VariableId 1560)
+                               +- Penalty on LoopId 26: {1: lat/intv 0} (unroll: latency/interval)
+                               +- Penalty on LoopId 30: {1: lat/intv 0} (unroll: latency/interval)
+                            Partition {dim 0: complete} (VariableId 1573)
+                               +- Penalty on LoopId 26: {1: lat/intv 0} (unroll: latency/interval)
+                               +- Penalty on LoopId 27: {1: lat/intv 0} (unroll: latency/interval)
+                               +- Penalty on LoopId 29: {1: lat/intv 0} (unroll: latency/interval)
+                            +- unroll with factors 1 (LoopId 25), min-max latency/interval: {unroll 1: lat/intv 8000}
+                               +- Access to VariableId 1556: {1: lat/intv 0} (unroll: latency/interval)
+                               +- Access to VariableId 1559: {1: lat/intv 0} (unroll: latency/interval)
+                            +- unroll with factors 1 (LoopId 29), min-max latency/interval: {unroll 1: lat/intv 10}
+                               +- Access to VariableId 1573: {1: lat/intv 0} (unroll: latency/interval)
+                            +- unroll with factors 1 (LoopId 26 [sample_loop]), min-max latency/interval: {unroll 1: lat/intv 60000}
+                               +- Access to VariableId 9: {1: lat/intv 0} (unroll: latency/interval)
+                               +- Access to VariableId 1560: {1: lat/intv 0} (unroll: latency/interval)
+                               +- Access to VariableId 1573: {1: lat/intv 0} (unroll: latency/interval)
+                               +- unroll with factors 1 (LoopId 27 [shift_loop]), min-max latency/interval: {unroll 1: lat/intv 18}
+                                  +- Access to VariableId 1573: {1: lat/intv 0} (unroll: latency/interval)
+                               +- unroll with factors 1 (LoopId 28 [fir_loop]), min-max latency/interval: {unroll 1: lat/intv 40}
+                                  +- Access to VariableId 9: {1: lat/intv 0} (unroll: latency/interval)
+                            +- unroll with factors 1 (LoopId 30), min-max latency/interval: {unroll 1: lat/intv 6000}
+                               +- Access to VariableId 1557: {1: lat/intv 0} (unroll: latency/interval)
+                               +- Access to VariableId 1560: {1: lat/intv 0} (unroll: latency/interval)
+                            Id: 0 contains valid solution: --, min-max latency/interval:  lat 74029 intv 74030, min-max area:  LUTs: 1888 FFs: 353 DSPs: 2 BRAMs: 3
+parallelismSelector::VERBO: Initial FPGA area occupied (min): Area -- (LUTs: 1888, FFs: 353, DSPs: 2, BRAMs: 3, URAMs: 0)
+parallelismSelector::VERBO: Initial FPGA area occupied (max): Area -- (LUTs: 1888, FFs: 353, DSPs: 2, BRAMs: 3, URAMs: 0)
+parallelismSelector::VERBO: HPE - Calculating latency and area for design space...
+                            Setting Space: FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1} (VariableId 9)
+                            Partition {dim 0: cyclic 1} (VariableId 1559)
+                            Partition {dim 0: cyclic 1} (VariableId 1560)
+                            Partition {dim 0: complete} (VariableId 1573)
+                            +- unroll with factors 1 (LoopId 25)
+                            +- unroll with factors 1 (LoopId 29)
+                            +- unroll with factors 1 (Label sample_loop) (LoopId 26)
+                               +- unroll with factors 1 (Label shift_loop) (LoopId 27)
+                               +- unroll with factors 1 (Label fir_loop) (LoopId 28)
+                            +- unroll with factors 1 (LoopId 30)
+                            
+parallelismSelector::VERBO: Calculating latency for top level hw function: top
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(286 F=695) (1589->1559)(1590->1556)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1589 is mapped to the object with value: 1559
+                             Object with value: 1590 is mapped to the object with value: 1556
+                            
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(289 F=692) (1561->1590)(1562->1589)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1561 is mapped to the object with value: 1556
+                             Object with value: 1562 is mapped to the object with value: 1559
+                             Object with value: 1589 is mapped to the object with value: 1559
+                             Object with value: 1590 is mapped to the object with value: 1556
+                            
+parallelismSelector::VERBO: Analyzing Loop "for.body" (LoopId 25):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 25
+parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: if.then.i.i.i.i.i -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: if.end.i.i.i.i.i -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: if.then31.i.i.i.i.i -> {1: 4}
+parallelismSelector::VERBO:          - EndCycles: if.else.i.i.i.i.i -> {1: 4}
+parallelismSelector::VERBO:          - EndCycles: _ZN8ap_fixedILi17ELi2EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ef.86.exit -> {1: 8}
+parallelismSelector::VERBO:          - EndCycles: if.then40.i.i.i.i.i -> {1: 5}
+parallelismSelector::VERBO:          - EndCycles: if.else44.i.i.i.i.i -> {1: 5}
+parallelismSelector::VERBO:          - EndCycles: if.then46.i.i.i.i.i -> {1: 6}
+parallelismSelector::VERBO:          - EndCycles: if.then48.i.i.i.i.i -> {1: 7}
+parallelismSelector::VERBO:          - EndCycles: if.else52.i.i.i.i.i -> {1: 7}
+parallelismSelector::VERBO:          - EndCycles: if.else57.i.i.i.i.i -> {1: 6}
+parallelismSelector::VERBO:          - EndCycles: if.then62.i.i.i.i.i -> {1: 7}
+parallelismSelector::VERBO:          - EndCycles: if.else66.i.i.i.i.i -> {1: 7}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 8}
+parallelismSelector::VERBO:        - Critical path: for.body, if.then.i.i.i.i.i, if.end.i.i.i.i.i, if.else.i.i.i.i.i, _ZN8ap_fixedILi17ELi2EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ef.86.exit, if.else44.i.i.i.i.i, if.then46.i.i.i.i.i, if.then48.i.i.i.i.i, if.else52.i.i.i.i.i, if.else57.i.i.i.i.i, if.then62.i.i.i.i.i, if.else66.i.i.i.i.i
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 1}, OwnedIIMem: {1: 1}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "read_task" (FunctionId 692):
+parallelismSelector::VERBO:         LoopId: 25, TC: 1000, IL: {1: 8}, IIMem: {1: 1}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 8000
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 25): 8000
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: _Z9read_taskPfP8ap_fixedILi17ELi2EL9ap_q_mode5EL9ap_o_mode3ELi0EEi
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: cond.true -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: cond.false -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: for.body.lr.ph -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: _ZN8ap_fixedILi17ELi2EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ef.86.exit -> {1: 8003}
+parallelismSelector::VERBO:          - EndCycles: for.cond.for.end_crit_edge -> {1: 8004}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 8004}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 8004}
+parallelismSelector::VERBO:        - Critical path: entry, cond.true, for.body.lr.ph, for.body, _ZN8ap_fixedILi17ELi2EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ef.86.exit, for.cond.for.end_crit_edge, for.end
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T3_F691_R2_Call" (FunctionId 695):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T3_F691_R2_Call
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 8005}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 8005}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot_iso0, newFuncRoot
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(287 F=696) (1592->1559)(1593->1560)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1592 is mapped to the object with value: 1559
+                             Object with value: 1593 is mapped to the object with value: 1560
+                            
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(290 F=693) (1570->1592)(1571->1593)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1570 is mapped to the object with value: 1559
+                             Object with value: 1571 is mapped to the object with value: 1560
+                             Object with value: 1592 is mapped to the object with value: 1559
+                             Object with value: 1593 is mapped to the object with value: 1560
+                            
+parallelismSelector::VERBO: Analyzing Loop "shift_loop" (LoopId 27):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 27 Label: shift_loop
+parallelismSelector::VERBO:          - EndCycles: for.body4 -> {1: 2}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 2}
+parallelismSelector::VERBO:        - Critical path: for.body4
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 0}, OwnedIIMem: {1: 0}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Loop "fir_loop" (LoopId 28):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 28 Label: fir_loop
+parallelismSelector::VERBO:          - EndCycles: for.body13 -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: if.then.i.i.i.i.i -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: if.end.i.i.i.i.i -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: if.then.i.i -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: _ZN13ap_fixed_baseILi19ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEpLILi34ELi4ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.67.exit -> {1: 4}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 4}
+parallelismSelector::VERBO:        - Critical path: for.body13, if.then.i.i.i.i.i, if.end.i.i.i.i.i, if.then.i.i, _ZN13ap_fixed_baseILi19ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEpLILi34ELi4ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.67.exit
+parallelismSelector::VERBO:     hasRAW: 1
+parallelismSelector::VERBO:     Recurrence: Circuit=7:12 -> 9:1 -> 9:2 -> 9:4 -> 11:0 -> 11:1 -> 11:3 -> 7:12
+parallelismSelector::VERBO:       distance=3
+parallelismSelector::VERBO:        - IIMem: {1: 0.5}, OwnedIIMem: {1: 0.5}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Loop "sample_loop" (LoopId 26):
+parallelismSelector::VERBO:         LoopId: 27, Label: shift_loop, TC: 9, IL: {1: 2}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 18
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 27): 18
+parallelismSelector::VERBO:         LoopId: 28, Label: fir_loop, TC: 10, IL: {1: 4}, IIMem: {1: 0.5}, IIDep 3
+parallelismSelector::VERBO:         	unroll 1 Cycles: 40
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 28): 40
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 26 Label: sample_loop
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 19}
+parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: for.body4 -> {1: 18}
+parallelismSelector::VERBO:          - EndCycles: _ZN13ap_fixed_baseILi19ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEpLILi34ELi4ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.67.exit -> {1: 59}
+parallelismSelector::VERBO:          - EndCycles: for.end19 -> {1: 60}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 60}
+parallelismSelector::VERBO:        - Critical path: for.end, for.body, for.body4, for.body13, _ZN13ap_fixed_baseILi19ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEpLILi34ELi4ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.67.exit, for.end19
+parallelismSelector::VERBO:     hasRAW: 1
+parallelismSelector::VERBO:     Recurrence: Circuit=5:7 -> 5:8 -> 5:7
+parallelismSelector::VERBO:       distance=2
+parallelismSelector::VERBO:     Recurrence: Circuit=7:7 -> 7:8 -> 7:11 -> 7:12 -> 9:1 -> 9:2 -> 9:3 -> 9:4 -> 11:0 -> 11:1 -> 11:3 -> 12:0 -> 12:3 -> 7:7
+parallelismSelector::VERBO:       distance=6
+parallelismSelector::VERBO:        - IIMem: {1: 1}, OwnedIIMem: {1: 1}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Loop "arrayinit.body" (LoopId 29):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 29
+parallelismSelector::VERBO:          - EndCycles: arrayinit.body -> {1: 1}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 1}
+parallelismSelector::VERBO:        - Critical path: arrayinit.body
+parallelismSelector::VERBO:     hasRAW: 1
+parallelismSelector::VERBO:     Recurrence: Circuit=1:0 -> 1:3 -> 1:0
+parallelismSelector::VERBO:       distance=1
+parallelismSelector::VERBO:        - IIMem: {1: 0}, OwnedIIMem: {1: 0}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "fir" (FunctionId 693):
+parallelismSelector::VERBO:         LoopId: 29, TC: 10, IL: {1: 1}, IIMem: {1: 0}, IIDep 1
+parallelismSelector::VERBO:         	unroll 1 Cycles: 10
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 29): 10
+parallelismSelector::VERBO:         LoopId: 26, Label: sample_loop, TC: 1000, IL: {1: 60}, IIMem: {1: 1}, IIDep 6
+parallelismSelector::VERBO:         	unroll 1 Cycles: 60000
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 26): 60000
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: _Z3firP8ap_fixedILi17ELi2EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi19ELi3ELS0_5ELS1_3ELi0EEi
+parallelismSelector::VERBO:          - EndCycles: arrayinit.end1 -> {1: 12}
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: arrayinit.body -> {1: 11}
+parallelismSelector::VERBO:          - EndCycles: for.body.lr.ph -> {1: 13}
+parallelismSelector::VERBO:          - EndCycles: for.end19 -> {1: 60013}
+parallelismSelector::VERBO:          - EndCycles: for.cond.for.end24_crit_edge -> {1: 60014}
+parallelismSelector::VERBO:          - EndCycles: for.end24 -> {1: 60014}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 60014}
+parallelismSelector::VERBO:        - Critical path: arrayinit.end1, entry, for.body, arrayinit.body, for.body.lr.ph, for.end19, for.cond.for.end24_crit_edge, for.end24
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T4_F691_R3_Call" (FunctionId 696):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T4_F691_R3_Call
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 60015}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 60015}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot, newFuncRoot_iso0
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(288 F=697) (1595->1560)(1596->1557)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1595 is mapped to the object with value: 1560
+                             Object with value: 1596 is mapped to the object with value: 1557
+                            
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(291 F=694) (1586->1595)(1587->1596)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1586 is mapped to the object with value: 1560
+                             Object with value: 1587 is mapped to the object with value: 1557
+                             Object with value: 1595 is mapped to the object with value: 1560
+                             Object with value: 1596 is mapped to the object with value: 1557
+                            
+parallelismSelector::VERBO: Analyzing Loop "for.body" (LoopId 30):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 30
+parallelismSelector::VERBO:          - EndCycles: if.end.i.i -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: if.then4.i.i -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: if.else.i.i -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: _ZNK13ap_fixed_baseILi19ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEcvfEv.61.exit -> {1: 6}
+parallelismSelector::VERBO:          - EndCycles: if.end9.i.i -> {1: 5}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 6}
+parallelismSelector::VERBO:        - Critical path: if.end.i.i, for.body, if.else.i.i, _ZNK13ap_fixed_baseILi19ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEcvfEv.61.exit, if.end9.i.i
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 1}, OwnedIIMem: {1: 1}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "write_task" (FunctionId 694):
+parallelismSelector::VERBO:         LoopId: 30, TC: 1000, IL: {1: 6}, IIMem: {1: 1}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 6000
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 30): 6000
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: _Z10write_taskP8ap_fixedILi19ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPfi
+parallelismSelector::VERBO:          - EndCycles: for.cond.for.end_crit_edge -> {1: 6004}
+parallelismSelector::VERBO:          - EndCycles: cond.true -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 6004}
+parallelismSelector::VERBO:          - EndCycles: _ZNK13ap_fixed_baseILi19ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEcvfEv.61.exit -> {1: 6003}
+parallelismSelector::VERBO:          - EndCycles: for.body.lr.ph -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: cond.false -> {1: 2}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 6004}
+parallelismSelector::VERBO:        - Critical path: for.body, for.cond.for.end_crit_edge, cond.true, for.end, _ZNK13ap_fixed_baseILi19ELi3ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEcvfEv.61.exit, for.body.lr.ph, entry
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T5_F691_R4_Call" (FunctionId 697):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T5_F691_R4_Call
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 6005}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 6005}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot, newFuncRoot_iso0
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "top" (FunctionId 691):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: _Z3topPfS_i
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 8007}
+parallelismSelector::VERBO:          - EndCycles: codeRepl1 -> {1: 68023}
+parallelismSelector::VERBO:          - EndCycles: codeRepl2 -> {1: 74029}
+parallelismSelector::VERBO:          - EndCycles: entry_iso3 -> {1: 74029}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 74029}
+parallelismSelector::VERBO:        - Critical path: entry, codeRepl, codeRepl1, codeRepl2, entry_iso3
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Filling in latencies and intervals per loop...
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 25, TC: 1000, IL: {1: 8}, IIMem: {1: 1}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 8
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 25, TC: 1000, IL: {1: 8}, IIMem: {1: 1}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 8000
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 27, Label: shift_loop, TC: 9, IL: {1: 2}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 2
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 27, Label: shift_loop, TC: 9, IL: {1: 2}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 18
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 28, Label: fir_loop, TC: 10, IL: {1: 4}, IIMem: {1: 0.5}, IIDep 3
+parallelismSelector::VERBO:     	unroll 1 Cycles: 4
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 28, Label: fir_loop, TC: 10, IL: {1: 4}, IIMem: {1: 0.5}, IIDep 3
+parallelismSelector::VERBO:     	unroll 1 Cycles: 40
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 26, Label: sample_loop, TC: 1000, IL: {1: 60}, IIMem: {1: 1}, IIDep 6
+parallelismSelector::VERBO:     	unroll 1 Cycles: 60
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 26, Label: sample_loop, TC: 1000, IL: {1: 60}, IIMem: {1: 1}, IIDep 6
+parallelismSelector::VERBO:     	unroll 1 Cycles: 60000
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 29, TC: 10, IL: {1: 1}, IIMem: {1: 0}, IIDep 1
+parallelismSelector::VERBO:     	unroll 1 Cycles: 1
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 29, TC: 10, IL: {1: 1}, IIMem: {1: 0}, IIDep 1
+parallelismSelector::VERBO:     	unroll 1 Cycles: 10
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 30, TC: 1000, IL: {1: 6}, IIMem: {1: 1}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 6
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 30, TC: 1000, IL: {1: 6}, IIMem: {1: 1}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 6000
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: _Z3topPfS_i : 691
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(286 F=695) (1589->1559)(1590->1556)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1589 is mapped to the object with value: 1559
+                             Object with value: 1590 is mapped to the object with value: 1556
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T3_F691_R2_Call : 695
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(289 F=692) (1561->1590)(1562->1589)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1561 is mapped to the object with value: 1556
+                             Object with value: 1562 is mapped to the object with value: 1559
+                             Object with value: 1589 is mapped to the object with value: 1559
+                             Object with value: 1590 is mapped to the object with value: 1556
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: _Z9read_taskPfP8ap_fixedILi17ELi2EL9ap_q_mode5EL9ap_o_mode3ELi0EEi : 692
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 25
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 14 FFs: 2 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {25: 1}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 14 FFs: 2 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 14 FFs: 2 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 542 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 14 FFs: 2 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 490 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 14 FFs: 2 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 582 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 40 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 14 FFs: 2 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 14 FFs: 2 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 582 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 14 FFs: 2 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 582 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(287 F=696) (1592->1559)(1593->1560)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1592 is mapped to the object with value: 1559
+                             Object with value: 1593 is mapped to the object with value: 1560
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T4_F691_R3_Call : 696
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(290 F=693) (1570->1592)(1571->1593)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1570 is mapped to the object with value: 1559
+                             Object with value: 1571 is mapped to the object with value: 1560
+                             Object with value: 1592 is mapped to the object with value: 1559
+                             Object with value: 1593 is mapped to the object with value: 1560
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: _Z3firP8ap_fixedILi17ELi2EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi19ELi3ELS0_5ELS1_3ELi0EEi : 693
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 26
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 27
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {27: 1}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 122 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 20 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 28
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {28: 1}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 174 FFs: 11 DSPs: 2 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 95 FFs: 11 DSPs: 2 BRAMs: 0
+parallelismSelector::VERBO: [visitNestedHeader] Adding nested shareable area from loop(id) 27 LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [visitNestedHeader] Adding nested shareable area from loop(id) 28 LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {26: 1}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 372 FFs: 11 DSPs: 2 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 20 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 29
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {29: 1}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 80 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 29 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 472 FFs: 11 DSPs: 2 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 20 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 472 FFs: 11 DSPs: 2 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 472 FFs: 11 DSPs: 2 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(288 F=697) (1595->1560)(1596->1557)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1595 is mapped to the object with value: 1560
+                             Object with value: 1596 is mapped to the object with value: 1557
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T5_F691_R4_Call : 697
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(291 F=694) (1586->1595)(1587->1596)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1586 is mapped to the object with value: 1560
+                             Object with value: 1587 is mapped to the object with value: 1557
+                             Object with value: 1595 is mapped to the object with value: 1560
+                             Object with value: 1596 is mapped to the object with value: 1557
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: _Z10write_taskP8ap_fixedILi19ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPfi : 694
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 30
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {30: 1}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 700 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 648 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 740 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 40 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 740 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 740 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: Calculate statically allocated area for variable ID 9
+parallelismSelector::VERBO:     Array bits: 170. Elements: 10. Element bits: 17
+parallelismSelector::VERBO:     No BRAM with complete partitioning. Allocate 40 LUTs and 170 FFs
+parallelismSelector::VERBO: Calculate statically allocated area for variable ID 1559
+parallelismSelector::VERBO:     Array bits: 17000. Elements: 1000. Element bits: 17
+parallelismSelector::VERBO:     Estimate statically allocated area assuming the BRAM resource type
+parallelismSelector::VERBO:         Would allocate 1 BRAMs according to the partition factor
+parallelismSelector::VERBO: Calculate statically allocated area for variable ID 1560
+parallelismSelector::VERBO:     Array bits: 19000. Elements: 1000. Element bits: 19
+parallelismSelector::VERBO:     Estimate statically allocated area assuming the BRAM resource type
+parallelismSelector::VERBO:         Would allocate 2 BRAMs according to the partition factor
+parallelismSelector::VERBO: Calculate statically allocated area for variable ID 1573
+parallelismSelector::VERBO:     Array bits: 170. Elements: 10. Element bits: 17
+parallelismSelector::VERBO:     No BRAM with complete partitioning. Allocate 40 LUTs and 170 FFs
+parallelismSelector::VERBO: Estimated metrics for the application:
+parallelismSelector::VERBO: Loop with Id 25:
+parallelismSelector::VERBO:     Variable with Id 1561 (in):
+parallelismSelector::VERBO:         II mem: 1 - 1
+                                    NumAvailMemPorts: 1 - 1
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Variable with Id 1562 (input):
+parallelismSelector::VERBO:         II mem: 1 - 1
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Trip count: 0 - 1000
+parallelismSelector::VERBO:     II: 8 - 8
+parallelismSelector::VERBO:     IsPipelinedRegion: false
+parallelismSelector::VERBO:     
+parallelismSelector::VERBO: Loop with Id 26:
+parallelismSelector::VERBO:     Circuit: { i6  }, Cycles: 2
+parallelismSelector::VERBO:     Circuit: { i25 conv.i mul.i i27 conv5.i.i.i.i.i shl.i.i.i.i.i conv4.i.i.i.i.i add.i.i i34 conv.i.i  conv.i.i.lcssa  }, Cycles: 6
+parallelismSelector::VERBO:     Variable with Id 1570 (in):
+parallelismSelector::VERBO:         II mem: 1 - 1
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Variable with Id 1571 (out):
+parallelismSelector::VERBO:         II mem: 1 - 1
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Variable with Id 1573 (reg):
+parallelismSelector::VERBO:         II mem: 1 - 1
+                                    NumAvailMemPorts: 1 - 1
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Trip count: 0 - 1000
+parallelismSelector::VERBO:     II: 60 - 60
+parallelismSelector::VERBO:     IsPipelinedRegion: false
+parallelismSelector::VERBO:     
+parallelismSelector::VERBO: Loop with Id 27:
+parallelismSelector::VERBO:     Variable with Id 1573 (reg):
+parallelismSelector::VERBO:         II mem: 1 - 1
+                                    NumAvailMemPorts: 1 - 1
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Trip count: 9 - 9
+parallelismSelector::VERBO:     II: 2 - 2
+parallelismSelector::VERBO:     IsPipelinedRegion: false
+parallelismSelector::VERBO:     
+parallelismSelector::VERBO: Loop with Id 28:
+parallelismSelector::VERBO:     Circuit: { i27 conv5.i.i.i.i.i shl.i.i.i.i.i add.i.i i34 conv.i.i  }, Cycles: 3
+parallelismSelector::VERBO:     Variable with Id 9 (a):
+parallelismSelector::VERBO:         II mem: 1 - 1
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Variable with Id 1573 (reg):
+parallelismSelector::VERBO:         II mem: 1 - 1
+                                    NumAvailMemPorts: 1 - 1
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Trip count: 10 - 10
+parallelismSelector::VERBO:     II: 4 - 4
+parallelismSelector::VERBO:     IsPipelinedRegion: false
+parallelismSelector::VERBO:     
+parallelismSelector::VERBO: Loop with Id 29:
+parallelismSelector::VERBO:     Circuit: { arrayinit.cur arrayinit.next }, Cycles: 1
+parallelismSelector::VERBO:     Variable with Id 1573 (reg):
+parallelismSelector::VERBO:         II mem: 1 - 1
+                                    NumAvailMemPorts: 1 - 1
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Trip count: 10 - 10
+parallelismSelector::VERBO:     II: 1 - 1
+parallelismSelector::VERBO:     IsPipelinedRegion: false
+parallelismSelector::VERBO:     
+parallelismSelector::VERBO: Loop with Id 30:
+parallelismSelector::VERBO:     Variable with Id 1586 (output):
+parallelismSelector::VERBO:         II mem: 1 - 1
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Variable with Id 1587 (out):
+parallelismSelector::VERBO:         II mem: 1 - 1
+                                    NumAvailMemPorts: 1 - 1
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Trip count: 0 - 1000
+parallelismSelector::VERBO:     II: 6 - 6
+parallelismSelector::VERBO:     IsPipelinedRegion: false
+parallelismSelector::VERBO:     
+parallelismSelector::VERBO: Function with Id 691:
+parallelismSelector::VERBO:     Interval: 74030 - 74030
+                                Latency: 74029 - 74029
+parallelismSelector::VERBO: Function with Id 692:
+parallelismSelector::VERBO:     Interval: 8005 - 8005
+                                Latency: 8004 - 8004
+parallelismSelector::VERBO: Function with Id 693:
+parallelismSelector::VERBO:     Interval: 60015 - 60015
+                                Latency: 60014 - 60014
+parallelismSelector::VERBO: Function with Id 694:
+parallelismSelector::VERBO:     Interval: 6005 - 6005
+                                Latency: 6004 - 6004
+parallelismSelector::VERBO: Function with Id 695:
+parallelismSelector::VERBO:     Interval: 8006 - 8006
+                                Latency: 8005 - 8005
+parallelismSelector::VERBO: Function with Id 696:
+parallelismSelector::VERBO:     Interval: 60016 - 60016
+                                Latency: 60015 - 60015
+parallelismSelector::VERBO: Function with Id 697:
+parallelismSelector::VERBO:     Interval: 6006 - 6006
+                                Latency: 6005 - 6005
+parallelismSelector::VERBO: Adding CallGuidance(SourceRange: /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:71-71:5-25, TI: 8005) for RegionTask 'Task(T3,F691,R2)'
+parallelismSelector::VERBO: Adding CallGuidance(SourceRange: /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:76-76:5-23, TI: 60015) for RegionTask 'Task(T4,F691,R3)'
+parallelismSelector::VERBO: Adding CallGuidance(SourceRange: /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp:77-77:5-28, TI: 6005) for RegionTask 'Task(T5,F691,R4)'

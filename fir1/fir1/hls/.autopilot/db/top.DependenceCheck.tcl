@@ -1,0 +1,32 @@
+
+
+set RtlHierarchyInfo {[
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST"},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.input_r_U"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.output_r_U"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.control_s_axi_U"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.gmem_m_axi_U"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.entry_proc_U0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.read_task_U0"},
+	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.read_task_U0.fpext_32ns_64_2_no_dsp_1_U3"},
+	{"ID" : "8", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.read_task_U0.sparsemux_9_3_17_1_1_U4"},
+	{"ID" : "9", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.read_task_U0.flow_control_loop_delay_pipe_U"},
+	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fir_U0"},
+	{"ID" : "11", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.fir_U0.mul_17s_15s_32_1_1_U11"},
+	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.fir_U0.mul_17s_15ns_32_1_1_U12"},
+	{"ID" : "13", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.fir_U0.mul_17s_14s_31_1_1_U13"},
+	{"ID" : "14", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.fir_U0.mul_17s_12ns_29_1_1_U14"},
+	{"ID" : "15", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.fir_U0.mul_17s_15ns_32_1_1_U15"},
+	{"ID" : "16", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.fir_U0.mul_17s_15s_32_1_1_U16"},
+	{"ID" : "17", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.fir_U0.mul_17s_14ns_31_1_1_U17"},
+	{"ID" : "18", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.fir_U0.mul_17s_13ns_30_1_1_U18"},
+	{"ID" : "19", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.fir_U0.mul_17s_13s_30_1_1_U19"},
+	{"ID" : "20", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.fir_U0.flow_control_loop_delay_pipe_U"},
+	{"ID" : "21", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.write_task_U0"},
+	{"ID" : "22", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.write_task_U0.grp_write_task_Pipeline_VITIS_LOOP_54_1_fu_79"},
+	{"ID" : "23", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.write_task_U0.grp_write_task_Pipeline_VITIS_LOOP_54_1_fu_79.ctlz_19_19_1_1_U30"},
+	{"ID" : "24", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.write_task_U0.grp_write_task_Pipeline_VITIS_LOOP_54_1_fu_79.flow_control_loop_pipe_sequential_init_U"},
+	{"ID" : "25", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.out_r_c_U"},
+	{"ID" : "26", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.N_c1_channel_U"},
+	{"ID" : "27", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.N_c_channel_U"}]}
+set DependenceCheckSize 0

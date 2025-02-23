@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Feb 23 14:59:02 2025
+# Process ID         : 1349
+# Current directory  : /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.runs/impl_1
+# Command line       : vivado -log bd_0_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source bd_0_wrapper.tcl -notrace
+# Log file           : /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper.vdi
+# Journal file       : /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog/project.runs/impl_1/vivado.jou
+# Running On         : ece-lnx-4511c
+# Platform           : RedHatEnterpriseServer
+# Operating System   : Red Hat Enterprise Linux Server release 7.9 (Maipo)
+# Processor Detail   : Intel(R) Xeon(R) Gold 6146 CPU @ 3.20GHz
+# CPU Frequency      : 3192.499 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 12
+# Host memory        : 135028 MB
+# Swap memory        : 68715 MB
+# Total Virtual      : 203743 MB
+# Available Virtual  : 175039 MB
+#-----------------------------------------------------------
+source bd_0_wrapper.tcl -notrace

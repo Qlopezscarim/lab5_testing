@@ -1,0 +1,269 @@
+<ENTRY>
+{
+ "thisFile": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/fir1.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sun Feb 23 14:53:03 2025",
+ "timestampMillis": "1740340383990",
+ "buildStep": {
+  "cmdId": "cc872410-ed4a-425a-9e9a-e00632bc6e55",
+  "name": "vitis-run",
+  "logFile": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/logs/fir1.steps.log",
+  "commandLine": "/apps/xilinx24/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --impl --config /ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/hls_config.cfg --work_dir fir1 ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/hls_config.cfg",
+   "--work_dir",
+   "fir1"
+  ],
+  "iniFiles": [],
+  "cwd": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Feb 23 14:53:03 2025",
+ "timestampMillis": "1740340383991",
+ "status": {
+  "cmdId": "cc872410-ed4a-425a-9e9a-e00632bc6e55",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sun Feb 23 14:53:14 2025",
+ "timestampMillis": "1740340394535",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "top",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.h",
+     "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Feb 23 14:53:14 2025",
+ "timestampMillis": "1740340394538",
+ "buildStep": {
+  "cmdId": "de886225-55b0-4262-82e6-661206b2e372",
+  "name": "",
+  "logFile": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Feb 23 14:53:14 2025",
+ "timestampMillis": "1740340394539",
+ "status": {
+  "cmdId": "de886225-55b0-4262-82e6-661206b2e372",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Feb 23 14:53:14 2025",
+ "timestampMillis": "1740340394541",
+ "report": {
+  "path": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Feb 23 14:53:14 2025",
+ "timestampMillis": "1740340394542",
+ "report": {
+  "path": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/report/verilog/export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Feb 23 14:53:14 2025",
+ "timestampMillis": "1740340394543",
+ "report": {
+  "path": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/report/verilog/export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Feb 23 14:53:14 2025",
+ "timestampMillis": "1740340394543",
+ "report": {
+  "path": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Feb 23 14:53:14 2025",
+ "timestampMillis": "1740340394543",
+ "report": {
+  "path": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/report/verilog/export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Feb 23 14:53:14 2025",
+ "timestampMillis": "1740340394543",
+ "report": {
+  "path": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls/impl/report/verilog/export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Feb 23 15:03:17 2025",
+ "timestampMillis": "1740340997167",
+ "report": {
+  "path": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Feb 23 15:03:17 2025",
+ "timestampMillis": "1740340997167",
+ "report": {
+  "path": "/ecel/UFAD/qlopezscarim/Desktop/lab5_vitis/fir1/fir1/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Feb 23 15:03:17 2025",
+ "timestampMillis": "1740340997168",
+ "status": {
+  "cmdId": "de886225-55b0-4262-82e6-661206b2e372",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Feb 23 15:03:17 2025",
+ "timestampMillis": "1740340997489",
+ "status": {
+  "cmdId": "cc872410-ed4a-425a-9e9a-e00632bc6e55",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Feb 23 15:03:17 2025",
+ "timestampMillis": "1740340997489",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Feb 23 15:03:17 2025",
+ "timestampMillis": "1740340997490",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

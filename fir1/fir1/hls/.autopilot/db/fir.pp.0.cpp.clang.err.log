@@ -1,0 +1,34 @@
+fir.cpp:10:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fir_XLX_SEP_ PragmaOptions=variable=reg type=complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=reg type=complete
+        ^
+fir.cpp:13:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fir_XLX_SEP_ PragmaOptions=max=1000_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS loop_tripcount max=1000
+        ^
+fir.cpp:23:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fir_XLX_SEP_ PragmaOptions=variable=y type=fifo_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_storage variable=y type=fifo
+        ^
+fir.cpp:26:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fir_XLX_SEP_ PragmaOptions=variable=y op=mul impl=fabric latency=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=y op=mul impl=fabric latency=0
+        ^
+fir.cpp:27:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fir_XLX_SEP_ PragmaOptions=variable=y op=add impl=fabric latency=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS bind_op variable=y op=add impl=fabric latency=0
+        ^
+fir.cpp:45:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=read_task_XLX_SEP_ PragmaOptions=max=1000_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS loop_tripcount max=1000
+        ^
+fir.cpp:56:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=write_task_XLX_SEP_ PragmaOptions=max=1000_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS loop_tripcount max=1000
+        ^
+directive:1:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=top_XLX_SEP_ PragmaOptions=name=top_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=top
+        ^
+fir.cpp:63:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=top_XLX_SEP_ PragmaOptions=mode=m_axi port=in depth=1000_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS interface mode=m_axi port=in depth=1000
+        ^
+fir.cpp:64:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=top_XLX_SEP_ PragmaOptions=mode=m_axi port=out depth=1000_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS interface mode=m_axi port=out depth=1000
+        ^
+fir.cpp:70:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=top_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+11 warnings generated.
